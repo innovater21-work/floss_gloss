@@ -1,0 +1,144 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+
+/* =========================================================
+   Tailwind theme — maps design tokens to utilities
+   ========================================================= */
+@theme inline {
+  --color-*: initial;
+  --color-primary: var(--fg-primary);
+  --color-on-primary: var(--fg-on-primary);
+  --color-accent: var(--fg-accent);
+  --color-on-accent: var(--fg-on-accent);
+  --color-soft: var(--fg-soft);
+  --color-bg: var(--fg-bg);
+  --color-bg-alt: var(--fg-bg-alt);
+  --color-surface: var(--fg-surface);
+  --color-line: var(--fg-line);
+  --color-ink: var(--fg-ink);
+  --color-muted: var(--fg-muted);
+  --color-dark: var(--fg-dark);
+  --color-on-dark: var(--fg-on-dark);
+  --color-dim: var(--fg-dim);
+  --color-star: var(--fg-star);
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-black: #000;
+  --color-white: #fff;
+
+  --font-display: var(--fg-font-display);
+  --font-body: var(--fg-font-body);
+  --font-sans: var(--fg-font-body);
+
+  --text-display: var(--fg-text-display);
+  --text-h2: var(--fg-text-h2);
+  --text-h2-lg: var(--fg-text-h2-lg);
+  --text-h2-xl: var(--fg-text-h2-xl);
+  --text-h2-sm: var(--fg-text-h2-sm);
+
+  --radius-pill: var(--fg-radius-pill);
+  --radius-sm: var(--fg-radius-sm);
+  --radius-md: var(--fg-radius-md);
+  --radius-lg: var(--fg-radius-lg);
+  --radius-card: var(--fg-radius-card);
+  --radius-xl: var(--fg-radius-xl);
+  --radius-band: var(--fg-radius-band);
+  --radius-arch: var(--fg-radius-arch);
+  --radius-arch-lg: var(--fg-radius-arch-lg);
+  --radius-leaf: var(--fg-radius-leaf);
+
+  --shadow-sticker: var(--fg-shadow-sticker);
+}
+
+/* Breakpoints follow the design (desktop-first): use max-lg / max-md / max-sm
+   max-lg  = ≤1000px (tablet)   max-md = ≤640px (phone)   max-sm = ≤600px */
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 601px;
+  --breakpoint-md: 641px;
+  --breakpoint-lg: 1001px;
+  --breakpoint-xl: 1280px;
+}
+
+/* =========================================================
+   Base
+   ========================================================= */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background: var(--fg-bg);
+    color: var(--fg-ink);
+    font-family: var(--fg-font-body);
+    font-size: 17px;
+    line-height: 1.6;
+    overflow-x: clip;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--fg-font-display);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.12;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  button {
+    cursor: pointer;
+  }
+  details > summary {
+    list-style: none;
+    cursor: pointer;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+/* =========================================================
+   Design-system utilities
+   ========================================================= */
+@utility wrap {
+  max-width: var(--fg-container);
+  margin-inline: auto;
+  padding-inline: 24px;
+  @media (width < 601px) {
+    padding-inline: 16px;
+  }
+}
+
+/* Vertical rhythm for standard sections */
+@utility section-y {
+  padding-block: var(--fg-section-y);
+  @media (width < 641px) {
+    padding-block: var(--fg-section-y-mobile);
+  }
+}
+
+/* Translucent tints of on-dark, used on the dark bands */
+@utility tint-dark-7 {
+  background: color-mix(in srgb, var(--fg-on-dark) 7%, transparent);
+}
+@utility tint-dark-8 {
+  background: color-mix(in srgb, var(--fg-on-dark) 8%, transparent);
+}
+@utility border-dark-12 {
+  border-color: color-mix(in srgb, var(--fg-on-dark) 12%, transparent);
+}
+@utility border-dark-15 {
+  border-color: color-mix(in srgb, var(--fg-on-dark) 15%, transparent);
+}
+@utility border-dark-35 {
+  border-color: color-mix(in srgb, var(--fg-on-dark) 35%, transparent);
+}
+@utility text-accent-on-dark {
+  color: color-mix(in srgb, var(--fg-accent) 70%, var(--fg-on-dark));
+}
+@utility bg-accent-25 {
+  background: color-mix(in srgb, var(--fg-accent) 25%, transparent);
+}
