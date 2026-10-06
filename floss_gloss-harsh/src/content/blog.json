@@ -1,0 +1,87 @@
+[
+  {
+    "slug": "signs-of-gum-disease",
+    "title": "Signs of Gum Disease",
+    "publishedAt": "2025-02-17",
+    "author": "Dr. Archana Mal",
+    "excerpt": "Gum disease can begin with inflammation and affect the soft tissue and bone that support the teeth.",
+    "image": { "src": "https://floss-gloss.in/images/blogs/1/1.png", "alt": "Signs of Gum Disease", "label": "Signs of gum disease" },
+    "sections": [
+      { "title": "Changes to notice", "paragraphs": ["Gums that are red, swollen, tender or bleed easily may need attention. Other possible signs include gum recession, persistent bad breath, loose teeth or discomfort when chewing.", "Gum disease may not cause obvious symptoms at first. A dental examination is the way to assess gum health and understand what may be causing a change."] },
+      { "title": "Why early assessment matters", "paragraphs": ["Dental plaque can harden into tartar, which a toothbrush cannot remove. A dental professional can examine the gums and recommend cleaning or other care based on what they find.", "If you notice bleeding or swelling that continues, book a dental assessment. Online information cannot diagnose your gums."] },
+      { "title": "Daily care", "paragraphs": ["Brush twice a day and clean between your teeth daily. Your dentist can suggest a routine and products that suit your mouth.", "This article is general information, not a personal diagnosis or treatment plan."] }
+    ],
+    "sources": [
+      { "label": "NIDCR: Periodontal (Gum) Disease", "url": "https://www.nidcr.nih.gov/health-info/gum-disease" },
+      { "label": "ADA MouthHealthy: Gum Disease", "url": "https://www.mouthhealthy.org/all-topics-a-z/gum-disease.aspx/" }
+    ]
+  },
+  {
+    "slug": "teeth-regrowing-drug-trial-japan",
+    "title": "Teeth Regrowing Drug: Trial in Japan",
+    "publishedAt": "2025-03-28",
+    "author": "Dr. Archana Mal",
+    "excerpt": "The idea of regrowing teeth has led to research into antibody approaches, including work associated with Kyoto University.",
+    "image": { "src": "https://floss-gloss.in/images/blogs/2/1.png", "alt": "Teeth Regrowing Drug: Trial in Japan", "label": "Research into tooth regrowth" },
+    "sections": [
+      { "title": "What the research explores", "paragraphs": ["The research discussed in the original article explores whether targeting USAG-1, a protein involved in tooth development, could support tooth regeneration. Published research has investigated this approach in animal models.", "That research is scientifically interesting, but an experimental approach is not the same as a treatment available in a dental clinic."] },
+      { "title": "What patients should know", "paragraphs": ["Research programmes and trial status can change. This archive article does not confirm the current stage, availability, safety or effectiveness of any investigational drug.", "Do not delay an assessment for a missing or painful tooth based on a headline about future treatments. A dentist can discuss established replacement options for your situation."] },
+      { "title": "Keep the story in context", "paragraphs": ["The link below is a published research paper about the USAG-1 antibody approach. For current trial information, check the study sponsor or a recognised trial registry.", "This article is an archived overview, not medical advice and not an announcement that Floss & Gloss offers tooth-regrowth medication."] }
+    ],
+    "sources": [
+      { "label": "Published research on USAG-1 antibody approach (2023)", "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/285276/1/j.reth.2023.01.004.pdf" },
+      { "label": "Floss & Gloss blog archive", "url": "https://floss-gloss.in/blog" }
+    ]
+  },
+  {
+    "slug": "stress-and-oral-health",
+    "title": "Stress Is a Significant Risk Factor for Oral Diseases",
+    "publishedAt": "2025-03-28",
+    "author": "Dr. Archana Mal",
+    "excerpt": "Stress can affect health and daily habits. Oral symptoms should be assessed by a dental professional rather than self-diagnosed.",
+    "image": { "src": "https://floss-gloss.in/images/blogs/3/1.png", "alt": "Stress and oral health", "label": "Stress and oral health" },
+    "sections": [
+      { "title": "Stress and the mouth", "paragraphs": ["Research describes associations between stress and some oral-health concerns. Stress may also affect routines such as brushing, eating or sleeping, which can influence how you feel day to day.", "Teeth grinding and clenching can have several contributing factors, including psychosocial factors. A dentist can check for tooth wear, jaw discomfort or other concerns."] },
+      { "title": "When to book a visit", "paragraphs": ["If you have persistent jaw soreness, tooth sensitivity, gum changes or another concern, arrange a dental examination. The dentist can assess your symptoms and explain appropriate care.", "This article does not claim that stress alone causes a dental condition. Health conditions and symptoms need individual assessment."] },
+      { "title": "Support your routine", "paragraphs": ["Keep up with daily brushing and cleaning between teeth, and contact a health professional if stress is affecting your wellbeing.", "Regular dental care and an open conversation can help identify concerns early and guide the next step."] }
+    ],
+    "sources": [
+      { "label": "NIDCR: Periodontal (Gum) Disease", "url": "https://www.nidcr.nih.gov/health-info/gum-disease" },
+      { "label": "NIDCR: Bruxism", "url": "https://www.nidcr.nih.gov/health-info/bruxism" }
+    ]
+  },
+  {
+    "slug": "why-regular-dental-checkups-matter",
+    "title": "Why Regular Dental Check-Ups Matter",
+    "publishedAt": "2026-01-21",
+    "author": "Dr. Archana Mal",
+    "excerpt": "Brushing and cleaning at home are important, and regular dental visits help assess concerns that are difficult to see yourself.",
+    "image": { "src": "https://floss-gloss.in/images/blogs/4/1.png", "alt": "Why Regular Dental Check-Ups Matter", "label": "Regular dental check-ups" },
+    "sections": [
+      { "title": "A check-up is more than a quick look", "paragraphs": ["A dental visit may include a review of your health history and an examination of your teeth and gums. X-rays are used when the dentist considers them helpful for diagnosis or planning.", "A check-up can help identify a concern and discuss options before a treatment plan is made."] },
+      { "title": "How often should you go?", "paragraphs": ["Many people are advised to arrange routine visits around every six months, but the right interval depends on oral health and individual risk. Follow the schedule your dentist recommends.", "If pain, swelling, injury or another urgent concern arises, contact the clinic instead of waiting for your next routine visit."] },
+      { "title": "Make the visit useful", "paragraphs": ["Bring questions about sensitivity, bleeding gums, brushing, medicines or treatment costs. Let the dentist know about changes in your health since your previous visit.", "The goal is a clear discussion of your needs and next steps—not a one-size-fits-all plan."] }
+    ],
+    "sources": [
+      { "label": "Floss & Gloss FAQ", "url": "https://floss-gloss.in/faq-dentist-shela-bopal" },
+      { "label": "NIDCR: Periodontal (Gum) Disease", "url": "https://www.nidcr.nih.gov/health-info/gum-disease" }
+    ]
+  },
+  {
+    "slug": "how-to-brush-your-teeth-properly",
+    "title": "How to Brush Your Teeth Properly: A Simple Guide for a Healthy Smile",
+    "publishedAt": "2026-01-30",
+    "author": "Dr. Archana Mal",
+    "excerpt": "A gentle, consistent brushing technique can help clean tooth surfaces and support everyday oral care.",
+    "image": { "src": "https://floss-gloss.in/images/blogs/5/1.png", "alt": "How to brush your teeth properly", "label": "Brushing your teeth" },
+    "sections": [
+      { "title": "Use a gentle technique", "paragraphs": ["The American Dental Association recommends brushing twice a day with a soft-bristled toothbrush and fluoride toothpaste. Place the brush at a 45-degree angle to the gums and use short, gentle strokes.", "Clean the outer, inner and chewing surfaces. To reach the inside surfaces of the front teeth, tilt the brush vertically and use several up-and-down strokes."] },
+      { "title": "Clean between teeth too", "paragraphs": ["A toothbrush may not reach the spaces between teeth. The ADA recommends cleaning between teeth daily with floss or another suitable interdental cleaner.", "Replace a toothbrush every three to four months, or sooner if the bristles are frayed."] },
+      { "title": "Ask for advice that fits you", "paragraphs": ["The right brush and technique can vary with age, dexterity, braces and oral-health needs. Ask your dentist to demonstrate a method that works for you.", "This guide is general information. If brushing causes pain or bleeding, ask a dental professional for an assessment."] }
+    ],
+    "sources": [
+      { "label": "ADA MouthHealthy: Brushing Your Teeth", "url": "https://www.mouthhealthy.org/all-topics-a-z/brushing-your-teeth" },
+      { "label": "ADA MouthHealthy: Oral Health Recommendations", "url": "https://www.mouthhealthy.org/oral-health-recommendations" }
+    ]
+  }
+]

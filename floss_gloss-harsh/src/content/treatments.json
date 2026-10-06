@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Scaling & Polishing", "slug": "scaling-polishing", "category": "Preventive", "icon": "spark",
+    "description": "A professional cleaning that removes plaque and tartar from places a toothbrush cannot reach.",
+    "intro": "Professional scaling removes hardened deposits from the teeth, including areas close to the gum line. Polishing smooths the tooth surfaces after cleaning. The dentist will first check your teeth and gums and explain what is appropriate for you.",
+    "metaTitle": "Scaling & Polishing in Shela, Ahmedabad",
+    "metaDescription": "Learn about professional scaling and polishing at Floss & Gloss Dental Clinic in Shela, Ahmedabad. Ask the dentist about a cleaning visit.",
+    "legacyPaths": ["/1-scaling-polishing-dentist-shela-bopal"],
+    "sections": [
+      { "title": "Why a professional cleaning helps", "paragraphs": ["Plaque can harden into tartar and collect around the gum line. A dental professional can remove deposits that regular brushing cannot reach.", "Cleaning needs vary. At your visit, the dentist checks your teeth and gums and recommends a suitable interval for follow-up care."] },
+      { "title": "What to expect", "paragraphs": ["The team examines your mouth, removes deposits with dental instruments, and may polish the tooth surfaces. If your gums are sensitive or you have questions, let the dentist know before treatment.", "A cleaning can be part of a preventive plan; it does not replace daily brushing, cleaning between teeth, or advice for a specific dental condition."] }
+    ]
+  },
+  {
+    "name": "Periodontal (Gum) Surgery", "slug": "periodontal-gum-surgery", "category": "Preventive", "icon": "gum",
+    "description": "Specialist assessment and treatment for gum disease and the tissues supporting your teeth.",
+    "intro": "Periodontal care focuses on the gums and supporting structures around teeth. When gum disease is advanced, a periodontist may discuss surgical options after examining the gums and reviewing your dental history.",
+    "metaTitle": "Periodontal & Gum Care in Shela, Ahmedabad",
+    "metaDescription": "Meet a periodontics specialist for gum health assessment and care in Shela, Ahmedabad. Treatment is planned after examination.",
+    "legacyPaths": ["/9-periodontal-surgery-dentist-shela-bopal"],
+    "sections": [
+      { "title": "Gum health assessment", "paragraphs": ["Red, swollen or bleeding gums, recession, persistent bad breath or loose teeth are reasons to arrange an examination. These signs can have more than one cause, so diagnosis requires a dental assessment.", "The dentist may check gum inflammation, pocket depth, teeth and supporting bone to understand the condition and discuss suitable next steps."] },
+      { "title": "Care options", "paragraphs": ["Depending on the findings, care may include professional cleaning, home-care guidance or specialist treatment. Surgery is considered only when it is appropriate for the individual case.", "Dr. Archana Mal has an MDS specialisation in Periodontics. She will explain the plan, expected visits and after-care before treatment begins."] }
+    ]
+  },
+  {
+    "name": "Tooth-coloured Fillings", "slug": "tooth-coloured-fillings", "category": "Restorative", "icon": "fill",
+    "description": "Composite restorations that can be matched to the shade of your natural teeth.",
+    "intro": "Tooth-coloured composite fillings can restore teeth affected by decay or minor damage while blending with their natural shade. The dentist checks the tooth and explains the options before treatment.",
+    "metaTitle": "Tooth-coloured Fillings in Shela, Ahmedabad",
+    "metaDescription": "Ask about composite, tooth-coloured fillings at Floss & Gloss Dental Clinic in Shela, Ahmedabad.",
+    "legacyPaths": ["/6-tooth-colored-fillings-dentist-shela-bopal"],
+    "sections": [
+      { "title": "A natural-looking restoration", "paragraphs": ["Composite resin is selected to blend with the tooth. It may be used to restore a tooth after the dentist removes damaged or decayed material.", "The right filling material depends on the location and size of the repair, your oral health and the dentist's assessment."] },
+      { "title": "Your appointment", "paragraphs": ["The dentist examines the tooth, discusses the proposed repair and answers questions about the process. Composite is placed and shaped to restore the tooth's form.", "Follow the care instructions provided at your visit and book a review if the restored tooth feels uncomfortable or different when you bite."] }
+    ]
+  },
+  {
+    "name": "Root Canal Treatment", "slug": "root-canal-treatment", "category": "Restorative", "icon": "root",
+    "description": "Treatment to clean and seal the inside of a tooth when its pulp is inflamed or infected.",
+    "intro": "A root canal may be recommended when the soft tissue inside a tooth is inflamed or infected. Treatment aims to address the affected tissue and preserve the natural tooth where possible.",
+    "metaTitle": "Root Canal Treatment in Shela, Ahmedabad",
+    "metaDescription": "Learn about root canal treatment at Floss & Gloss Dental Clinic in Shela. A dental examination is needed to confirm the cause of tooth pain.",
+    "legacyPaths": ["/13-root-canal-treatment-dentist-shela-bopal"],
+    "sections": [
+      { "title": "When a root canal may be discussed", "paragraphs": ["Deep decay, a crack or repeated dental work can affect the pulp inside a tooth. Pain or lingering sensitivity can have several causes, so an examination and any needed X-rays help guide diagnosis.", "The dentist will explain whether a root canal or another option is appropriate after assessing the tooth."] },
+      { "title": "The treatment plan", "paragraphs": ["Root canal treatment involves cleaning and sealing the inside of the affected tooth. The number of visits and the final restoration depend on the tooth and your treatment plan.", "The team explains each step and after-care. If you have ongoing pain or swelling, contact the clinic for an assessment rather than relying on online information to diagnose it."] }
+    ]
+  },
+  {
+    "name": "Crown & Bridge", "slug": "crown-and-bridge", "category": "Restorative", "icon": "crown",
+    "description": "Fixed restorations that can protect a damaged tooth or replace a missing tooth.",
+    "intro": "Crowns cover and protect a tooth, while bridges replace one or more missing teeth by connecting to supporting teeth or implants. The dentist reviews your oral health and discusses available options.",
+    "metaTitle": "Dental Crowns & Bridges in Shela, Ahmedabad",
+    "metaDescription": "Explore crown and bridge options at Floss & Gloss Dental Clinic in Shela, Ahmedabad. Plans are tailored after a dental examination.",
+    "legacyPaths": ["/2-fix-teeth-crown-dentist-shela-bopal"],
+    "sections": [
+      { "title": "Restoring strength and function", "paragraphs": ["A crown may be used to restore the shape and function of a tooth that needs more coverage than a filling can provide. A bridge may replace a gap using adjacent teeth or implants for support.", "The material, design and suitability depend on the tooth, bite and overall oral health. Your dentist will explain the trade-offs before you decide."] },
+      { "title": "From assessment to fitting", "paragraphs": ["The process begins with an examination and treatment plan. Measurements are used to design a restoration that fits your mouth and bite.", "Your dentist will explain the expected appointments, care at home and any alternatives that may be suitable for you."] }
+    ]
+  },
+  {
+    "name": "Dental Implants", "slug": "dental-implants", "category": "Restorative", "icon": "implant",
+    "description": "A fixed tooth-replacement option using an implant to support a crown or other restoration.",
+    "intro": "Dental implants can replace missing teeth by supporting a crown or other restoration. An implant assessment considers your gums, jawbone, medical history and treatment goals.",
+    "metaTitle": "Dental Implants in Shela, Ahmedabad",
+    "metaDescription": "Discuss dental implant options with a periodontics specialist at Floss & Gloss in Shela, Ahmedabad.",
+    "legacyPaths": ["/10-dental-implants-dentist-shela-bopal"],
+    "sections": [
+      { "title": "Planning a replacement tooth", "paragraphs": ["An implant is placed in the jaw to support a replacement tooth. Whether it is suitable depends on an individual examination and the condition of the supporting tissues.", "The dentist discusses the steps, healing time, maintenance and other options such as a bridge or denture before treatment is planned."] },
+      { "title": "Long-term care", "paragraphs": ["Implant restorations need regular cleaning and dental reviews, just like natural teeth. The dentist will explain how to care for the restoration and surrounding gums.", "Dr. Archana Mal's postgraduate specialisation is in Periodontics, which includes the gums and supporting structures relevant to implant care."] }
+    ]
+  },
+  {
+    "name": "Dentures", "slug": "dentures", "category": "Restorative", "icon": "denture",
+    "description": "Full or partial removable replacements planned for comfort, fit and everyday function.",
+    "intro": "Dentures replace some or all missing teeth. They are made to fit your mouth and support speaking, eating and smiling. Your dentist can help compare dentures with other replacement options.",
+    "metaTitle": "Dentures in Shela, Ahmedabad",
+    "metaDescription": "Ask about full and partial denture options at Floss & Gloss Dental Clinic in Shela, Ahmedabad.",
+    "legacyPaths": ["/11-dentures-dentist-shela-bopal"],
+    "sections": [
+      { "title": "Full and partial options", "paragraphs": ["Full dentures replace a complete arch of teeth; partial dentures replace several missing teeth while fitting around the remaining teeth.", "The choice and design depend on your mouth, comfort needs and oral health. The dentist will discuss available options after an examination."] },
+      { "title": "Fit and maintenance", "paragraphs": ["A well-planned denture should be made to fit your mouth. Follow-up visits may be needed to assess comfort and fit as your mouth changes.", "The team will show you how to clean and store your denture and how often to return for a review."] }
+    ]
+  },
+  {
+    "name": "Smile Designing", "slug": "smile-designing", "category": "Cosmetic", "icon": "smile",
+    "description": "A personalised discussion of tooth shape, shade and symmetry to plan aesthetic changes.",
+    "intro": "Smile designing starts with a conversation about what you would like to change. The dentist considers tooth shape, shade, alignment, gums and oral health before discussing suitable options.",
+    "metaTitle": "Smile Designing in Shela, Ahmedabad",
+    "metaDescription": "Discuss smile design and cosmetic dentistry options at Floss & Gloss Dental Clinic in Shela, Ahmedabad.",
+    "legacyPaths": ["/3-smile-designing-dentist-shela-bopal"],
+    "sections": [
+      { "title": "A plan shaped around you", "paragraphs": ["People have different goals for their smile. A consultation helps identify what matters to you and what changes may be suitable for your teeth and gums.", "Depending on the assessment, options may include whitening, bonding, veneers or orthodontic care. Not every option is suitable for every person."] },
+      { "title": "Understand the options first", "paragraphs": ["Your dentist will explain the benefits, limitations, costs and maintenance associated with any proposed treatment.", "A considered plan starts with healthy teeth and gums. The dentist may recommend addressing an oral-health concern before cosmetic treatment."] }
+    ]
+  },
+  {
+    "name": "Veneers", "slug": "veneers", "category": "Cosmetic", "icon": "veneer",
+    "description": "Thin porcelain or composite shells used to change the appearance of selected teeth.",
+    "intro": "Veneers are thin shells bonded to the front surface of teeth to change their appearance. A consultation helps determine whether veneers or a less involved option better fits your goals.",
+    "metaTitle": "Dental Veneers in Shela, Ahmedabad",
+    "metaDescription": "Learn about porcelain and composite veneer options at Floss & Gloss Dental Clinic in Shela, Ahmedabad.",
+    "legacyPaths": ["/7-veneers-dentist-shela-bopal"],
+    "sections": [
+      { "title": "What veneers can address", "paragraphs": ["Veneers may be used to change the appearance of selected teeth, including concerns such as chips, stains or gaps. The dentist will assess your teeth and gums first.", "Veneers are not the right choice for everyone. Your dentist will explain alternatives and how each option may affect your natural tooth structure."] },
+      { "title": "Planning and maintenance", "paragraphs": ["The shade and shape are planned with your goals in mind. The dentist discusses the preparation, fitting, expected maintenance and limitations before treatment.", "Regular dental care and a suitable home-care routine help maintain your oral health after cosmetic treatment."] }
+    ]
+  },
+  {
+    "name": "Cosmetic Treatment", "slug": "cosmetic-treatment", "category": "Cosmetic", "icon": "spark",
+    "description": "Aesthetic options such as whitening and other touch-ups, chosen after a dental assessment.",
+    "intro": "Cosmetic dentistry includes treatments intended to change the appearance of teeth or a smile. A dental examination helps make sure the teeth and gums are ready for any proposed treatment.",
+    "metaTitle": "Cosmetic Dental Treatment in Shela, Ahmedabad",
+    "metaDescription": "Explore cosmetic dentistry and whitening options at Floss & Gloss Dental Clinic in Shela, Ahmedabad.",
+    "legacyPaths": ["/5-cosmetic-treatment-dentist-shela-bopal"],
+    "sections": [
+      { "title": "Explore your options", "paragraphs": ["The right approach depends on what you would like to change and on the health of your teeth and gums. Options may include professional whitening or other aesthetic treatments.", "The dentist explains what a treatment can and cannot do, including maintenance needs and possible sensitivity, before you make a decision."] },
+      { "title": "A healthy starting point", "paragraphs": ["A check-up helps identify issues that may need attention before cosmetic treatment. The plan is adjusted to your oral health, goals and budget.", "Ask the clinic about current treatment options and costs during your consultation."] }
+    ]
+  },
+  {
+    "name": "Orthodontics & Invisalign", "slug": "orthodontics-invisalign", "category": "Cosmetic", "icon": "align",
+    "description": "Braces and clear aligner options to improve tooth alignment and bite function.",
+    "intro": "Orthodontic treatment can address the alignment of teeth and the bite. An assessment helps identify which options may be suitable, including traditional braces or clear aligners.",
+    "metaTitle": "Orthodontics & Clear Aligners in Shela, Ahmedabad",
+    "metaDescription": "Discuss braces and Invisalign clear aligner options at Floss & Gloss Dental Clinic in Shela, Ahmedabad.",
+    "legacyPaths": ["/4-ortho-treatment-dentist-shela-bopal"],
+    "sections": [
+      { "title": "Options for tooth alignment", "paragraphs": ["Orthodontic options may include metal or ceramic braces and clear aligners. The right choice depends on the type of movement needed, your bite and your treatment goals.", "A clinician will assess your teeth and explain likely steps, appointments, duration and costs. Clear aligners are not suitable for every case."] },
+      { "title": "Care during treatment", "paragraphs": ["Good daily cleaning and regular reviews are important during orthodontic care. The team will share instructions for the appliance you choose.", "Ask questions about comfort, eating, cleaning and retention so you can make an informed decision before starting."] }
+    ]
+  },
+  {
+    "name": "Extraction", "slug": "tooth-extraction", "category": "Surgical", "icon": "pull",
+    "description": "Assessment and careful removal when a tooth cannot be restored or needs to be removed.",
+    "intro": "A tooth may need to be removed when it cannot be restored or when removal is otherwise recommended. The dentist examines the tooth and explains alternatives and the procedure before proceeding.",
+    "metaTitle": "Tooth Extraction in Shela, Ahmedabad",
+    "metaDescription": "Discuss tooth extraction and alternatives with the dentist at Floss & Gloss Dental Clinic in Shela, Ahmedabad.",
+    "legacyPaths": ["/8-extraction-dentist-shela-bopal"],
+    "sections": [
+      { "title": "Assessment before removal", "paragraphs": ["The dentist checks the tooth, surrounding tissues and relevant health information. If a filling, crown or other treatment could preserve the tooth, those options can be discussed.", "The plan depends on the tooth's position and condition. The clinic explains what the visit involves and answers questions before treatment."] },
+      { "title": "After-care and replacement options", "paragraphs": ["After-care instructions are tailored to the procedure and your health. Contact the clinic if you are unsure about recovery or notice a concern after your visit.", "If a tooth is removed, the dentist can discuss whether replacing it is needed and which options may suit you."] }
+    ]
+  },
+  {
+    "name": "Wisdom Tooth Surgery", "slug": "wisdom-tooth-surgery", "category": "Surgical", "icon": "wisdom",
+    "description": "Assessment and removal options for painful, impacted or problematic wisdom teeth.",
+    "intro": "Wisdom teeth can become impacted, crowded, decayed or infected. An examination, and sometimes an X-ray, helps the dentist understand their position and discuss whether treatment is needed.",
+    "metaTitle": "Wisdom Tooth Surgery in Shela, Ahmedabad",
+    "metaDescription": "Get an assessment for wisdom tooth pain or impaction at Floss & Gloss Dental Clinic in Shela, Ahmedabad.",
+    "legacyPaths": ["/12-wisdom-tooth-surgery-dentist-shela-bopal"],
+    "sections": [
+      { "title": "When to arrange an assessment", "paragraphs": ["Pain, swelling, difficulty cleaning, decay or repeated infection around a wisdom tooth can be reasons to book an examination. Symptoms alone cannot show whether removal is needed.", "The dentist assesses the tooth and discusses monitoring, cleaning or removal options based on your individual situation."] },
+      { "title": "If surgery is recommended", "paragraphs": ["The team explains the proposed procedure, anaesthesia options, recovery and after-care before you decide. The approach depends on the tooth's position and complexity.", "Follow the written after-care instructions and contact the clinic if you have questions or a concern during recovery."] }
+    ]
+  },
+  {
+    "name": "Pediatric Dentistry", "slug": "pediatric-dentistry", "category": "Kids", "icon": "kid",
+    "description": "Friendly dental care that helps children build healthy habits from an early age.",
+    "intro": "Paediatric dentistry supports the oral health of babies, children and teenagers. Visits can include prevention, routine checks and treatment planned around a child's age and needs.",
+    "metaTitle": "Paediatric Dentist in Shela, Ahmedabad",
+    "metaDescription": "Find friendly children's dental care at Floss & Gloss Dental Clinic in Shela, Ahmedabad. Call to arrange a family visit.",
+    "legacyPaths": ["/14-pediatric-dentistry-dentist-shela-bopal"],
+    "sections": [
+      { "title": "Build comfortable dental habits", "paragraphs": ["Early visits give families a chance to ask about brushing, diet, fluoride and dental development. The team aims to make the experience calm and age-appropriate.", "A parent or caregiver can share what helps the child feel at ease and any concerns about their teeth before the appointment."] },
+      { "title": "Care for growing smiles", "paragraphs": ["Children may need routine checks, preventive care or treatment for a dental concern. The dentist explains findings and options in language families can understand.", "The right visit schedule and treatment depend on the child's oral health and development, so individual advice comes from the clinician. "] }
+    ]
+  }
+]
