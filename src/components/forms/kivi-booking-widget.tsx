@@ -58,7 +58,7 @@ export function BookingWidgetProvider({ children }: { children: ReactNode }) {
               >×</button>
             </header>
             <div className="grid gap-5 bg-bg-alt px-6 py-7 max-md:px-4">
-              <p className="max-w-[760px] text-[14px] text-muted">Your booking details are entered on KiviHealth. If the provider has no suitable slots, you can return here and send the clinic an email request; that request does not reserve a time.</p>
+              <p className="max-w-[760px] text-[14px] text-muted">Your booking details are entered on KiviHealth. If the provider has no suitable slots, you can return here and send the clinic an email request.</p>
               <div className="flex flex-wrap items-center gap-4">
                 <ButtonLink variant="accent" href={clinic.kiviBookingUrl} target="_blank" rel="noopener noreferrer" onClick={closeBooking}>Continue to KiviHealth <span aria-hidden="true">↗</span></ButtonLink>
                 <Link
