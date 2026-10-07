@@ -1,4 +1,5 @@
 import { ButtonLink } from "@/components/ui/button";
+import { BookAppointmentButton } from "@/components/forms/kivi-booking-widget";
 import { Icon } from "@/components/ui/icon";
 import { Photo } from "@/components/ui/photo";
 import { Pill } from "@/components/ui/pill";
@@ -53,14 +54,15 @@ export function Hero() {
         </p>
 
         <div className="flex flex-wrap justify-center gap-3">
-          <ButtonLink href="#visit">
+          <BookAppointmentButton>
             <Icon name="cal" />
             Book your family&apos;s visit
-          </ButtonLink>
+          </BookAppointmentButton>
           <ButtonLink variant="outline" href={clinic.whatsapp}>
             <Icon name="wa" />
             Ask on WhatsApp
           </ButtonLink>
+          <ButtonLink variant="outline" href="/#callback-form">Request a callback</ButtonLink>
         </div>
 
         <div className="relative mt-16 grid grid-cols-[1fr_1.25fr_1fr] items-end gap-[22px] max-md:mt-10 max-md:grid-cols-1">
@@ -88,3 +90,4 @@ export function Hero() {
     </section>
   );
 }
+

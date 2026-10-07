@@ -1,80 +1,261 @@
-import type { IconName } from "@/components/ui/icon";
+import siteJson from "./site.json";
+import treatmentJson from "./treatments.json";
+import blogJson from "./blog.json";
+import { iconNames, type IconName } from "@/components/ui/icon";
 
-export const clinic = {
-  name: "Floss & Gloss",
-  tagline: "Family Dental Clinic",
-  area: "Shela",
-  phone: "+91 91045 91919",
-  phoneHref: "tel:+919104591919",
-  whatsapp: "https://api.whatsapp.com/send?phone=919104591919",
-  email: "drarchanamal@gmail.com",
-  address: "130, First Floor, Orchid Sky, Shela, Ahmedabad 380058",
-  mapEmbed:
-    "https://maps.google.com/maps?q=Floss%20%26%20Gloss%20Dental%20Clinic%2C%20Orchid%20Sky%2C%20Shela%2C%20Ahmedabad&z=15&output=embed",
-  directions:
-    "https://www.google.com/maps/search/?api=1&query=Floss%20%26%20Gloss%20Dental%20Clinic%2C%20Orchid%20Sky%2C%20Shela%2C%20Ahmedabad",
-  rating: "5.0",
-  reviewCount: 84,
-  since: 2007,
-  serviceAreas: "Shela, Bopal, South Bopal, Applewoods & Shilaj",
-};
-
-/** Images are served from the live site (floss-gloss.in). To self-host, drop the files into
- *  public/images and change these to "/images/…" paths. */
-export const ASSET_BASE = "https://floss-gloss.in/images";
-
-export const logo = { src: `${ASSET_BASE}/logo.png`, width: 269, height: 81 };
-
-export const photos = {
-  clinic: { src: `${ASSET_BASE}/infrastructure/1.jpg`, alt: "Clinic entrance", label: "Clinic" },
-  doctor: { src: `${ASSET_BASE}/infrastructure/2.jpg`, alt: "Dr. Archana Mal", label: "Dr. Archana" },
-  treatment: { src: `${ASSET_BASE}/infrastructure/3.jpg`, alt: "Treatment room", label: "Treatment" },
-};
-
-export const nav = [
-  { label: "Home", href: "#" },
-  { label: "Treatments", href: "#treatments" },
-  { label: "Our doctor", href: "#doctor" },
-  { label: "Reviews", href: "#reviews" },
-  { label: "Visit", href: "#visit" },
-];
-
-export const ages: { icon: IconName; title: string; text: string; tags: string[] }[] = [
-  { icon: "kid", title: "Little ones", text: "Fear-free first visits that build healthy habits early.", tags: ["Pediatric care", "Fillings", "Habit advice"] },
-  { icon: "align", title: "Teens", text: "Straighter smiles and wisdom-tooth care, done right.", tags: ["Braces", "Invisalign", "Wisdom teeth"] },
-  { icon: "smile", title: "Adults", text: "Fix pain fast, protect your gums and love your smile.", tags: ["Root canal", "Smile design", "Veneers"] },
-  { icon: "heart", title: "Seniors", text: "Comfortable replacements that let you eat and smile freely.", tags: ["Implants", "Dentures", "Gum care"] },
-];
-
-export const promises: { icon: IconName; title: string; text: string }[] = [
-  { icon: "chat", title: "Every step explained", text: "You'll always know what's happening and why." },
-  { icon: "clock", title: "Never rushed", text: "Appointment-based visits mean no waiting and no hurry." },
-  { icon: "card", title: "Clear pricing", text: "Costs discussed upfront, with multiple payment options." },
-  { icon: "kid", title: "Great with kids", text: "Patient, playful care that calms little nerves." },
-];
+type JsonObject = Record<string, unknown>;
+type IconRecord = { icon: IconName; title: string; text: string };
+type PhotoAsset = { src: string; alt: string; label: string };
 
 export type TreatmentCategory = "Preventive" | "Restorative" | "Cosmetic" | "Surgical" | "Kids";
-export type Treatment = { name: string; category: TreatmentCategory; icon: IconName; description: string };
+export type TreatmentSection = { title: string; paragraphs: string[] };
+export type Treatment = {
+  name: string;
+  slug: string;
+  category: TreatmentCategory;
+  icon: IconName;
+  description: string;
+  intro: string;
+  metaTitle: string;
+  metaDescription: string;
+  legacyPaths: string[];
+  sections: TreatmentSection[];
+};
+export type Faq = { q: string; a: string; featured: boolean };
+export type Review = { name: string; text: string };
+export type BlogPost = {
+  slug: string;
+  title: string;
+  publishedAt: string;
+  author: string;
+  excerpt: string;
+  image: PhotoAsset;
+  sections: TreatmentSection[];
+  sources: { label: string; url: string }[];
+};
+export type HomepageSlide = { title: string; text: string; image: PhotoAsset };
 
-export const treatments: Treatment[] = [
-  { name: "Scaling & Polishing", category: "Preventive", icon: "spark", description: "A professional deep clean that removes tartar and stains and protects your gums." },
-  { name: "Periodontal (Gum) Surgery", category: "Preventive", icon: "gum", description: "Specialist treatment for gum disease from an MDS Periodontist." },
-  { name: "Tooth-coloured Fillings", category: "Restorative", icon: "fill", description: "Composite fillings that blend with your natural teeth — no silver showing." },
-  { name: "Root Canal Treatment", category: "Restorative", icon: "root", description: "Save an infected tooth and end the pain — explained step by step." },
-  { name: "Crown & Bridge", category: "Restorative", icon: "crown", description: "Fixed teeth that restore strength and a natural look." },
-  { name: "Dental Implants", category: "Restorative", icon: "implant", description: "Permanent titanium-rooted teeth that look and feel natural." },
-  { name: "Dentures", category: "Restorative", icon: "denture", description: "Comfortable full or partial dentures for a confident bite." },
-  { name: "Smile Designing", category: "Cosmetic", icon: "smile", description: "A planned makeover of shape, shade and symmetry, tailored to you." },
-  { name: "Veneers", category: "Cosmetic", icon: "veneer", description: "Thin porcelain or composite shells that fix chips, stains and gaps." },
-  { name: "Cosmetic Treatment", category: "Cosmetic", icon: "spark", description: "Whitening and aesthetic touch-ups for a brighter, even smile." },
-  { name: "Orthodontics & Invisalign", category: "Cosmetic", icon: "align", description: "Straighten teeth with braces or near-invisible clear aligners." },
-  { name: "Extraction", category: "Surgical", icon: "pull", description: "Gentle, comfortable removal when a tooth cannot be saved." },
-  { name: "Wisdom Tooth Surgery", category: "Surgical", icon: "wisdom", description: "Safe removal of impacted or painful wisdom teeth." },
-  { name: "Pediatric Dentistry", category: "Kids", icon: "kid", description: "Friendly, fear-free care that builds healthy habits early." },
-];
+function object(value: unknown, path: string): JsonObject {
+  if (typeof value !== "object" || value === null || Array.isArray(value)) {
+    throw new Error(`Invalid content JSON at ${path}: expected an object.`);
+  }
+  return value as JsonObject;
+}
 
-const byCategory = (...cats: TreatmentCategory[]) =>
-  cats.flatMap((c) => treatments.filter((t) => t.category === c));
+function string(value: unknown, path: string): string {
+  if (typeof value !== "string" || value.trim().length === 0) {
+    throw new Error(`Invalid content JSON at ${path}: expected a non-empty string.`);
+  }
+  return value;
+}
+
+function number(value: unknown, path: string): number {
+  if (typeof value !== "number" || !Number.isFinite(value)) {
+    throw new Error(`Invalid content JSON at ${path}: expected a finite number.`);
+  }
+  return value;
+}
+
+function bool(value: unknown, path: string): boolean {
+  if (typeof value !== "boolean") throw new Error(`Invalid content JSON at ${path}: expected a boolean.`);
+  return value;
+}
+
+function array(value: unknown, path: string): unknown[] {
+  if (!Array.isArray(value)) throw new Error(`Invalid content JSON at ${path}: expected an array.`);
+  return value;
+}
+
+function strings(value: unknown, path: string): string[] {
+  return array(value, path).map((item, index) => string(item, `${path}[${index}]`));
+}
+
+function icon(value: unknown, path: string): IconName {
+  const candidate = string(value, path);
+  if (!(iconNames as readonly string[]).includes(candidate)) {
+    throw new Error(`Invalid content JSON at ${path}: unknown icon "${candidate}".`);
+  }
+  return candidate as IconName;
+}
+
+function parseSections(value: unknown, path: string): TreatmentSection[] {
+  return array(value, path).map((item, index) => {
+    const row = object(item, `${path}[${index}]`);
+    return {
+      title: string(row.title, `${path}[${index}].title`),
+      paragraphs: strings(row.paragraphs, `${path}[${index}].paragraphs`),
+    };
+  });
+}
+
+const root = object(siteJson, "site");
+const clinicJson = object(root.clinic, "site.clinic");
+export const clinic = {
+  name: string(clinicJson.name, "site.clinic.name"),
+  tagline: string(clinicJson.tagline, "site.clinic.tagline"),
+  area: string(clinicJson.area, "site.clinic.area"),
+  phone: string(clinicJson.phone, "site.clinic.phone"),
+  phoneHref: string(clinicJson.phoneHref, "site.clinic.phoneHref"),
+  whatsapp: string(clinicJson.whatsapp, "site.clinic.whatsapp"),
+  email: string(clinicJson.email, "site.clinic.email"),
+  address: string(clinicJson.address, "site.clinic.address"),
+  mapEmbed: string(clinicJson.mapEmbed, "site.clinic.mapEmbed"),
+  directions: string(clinicJson.directions, "site.clinic.directions"),
+  bookingUrl: string(clinicJson.bookingUrl, "site.clinic.bookingUrl"),
+  kiviBookingUrl: string(clinicJson.kiviBookingUrl, "site.clinic.kiviBookingUrl"),
+  googleSearchUrl: string(clinicJson.googleSearchUrl, "site.clinic.googleSearchUrl"),
+  googleReviewUrl: string(clinicJson.googleReviewUrl, "site.clinic.googleReviewUrl"),
+  facebookUrl: string(clinicJson.facebookUrl, "site.clinic.facebookUrl"),
+  instagramUrl: string(clinicJson.instagramUrl, "site.clinic.instagramUrl"),
+  rating: string(clinicJson.rating, "site.clinic.rating"),
+  reviewCount: number(clinicJson.reviewCount, "site.clinic.reviewCount"),
+  since: number(clinicJson.since, "site.clinic.since"),
+  serviceAreas: string(clinicJson.serviceAreas, "site.clinic.serviceAreas"),
+};
+
+const logoJson = object(root.logo, "site.logo");
+export const logo = {
+  src: string(logoJson.src, "site.logo.src"),
+  width: number(logoJson.width, "site.logo.width"),
+  height: number(logoJson.height, "site.logo.height"),
+};
+
+function parsePhoto(value: unknown, path: string): PhotoAsset {
+  const row = object(value, path);
+  return {
+    src: string(row.src, `${path}.src`),
+    alt: string(row.alt, `${path}.alt`),
+    label: string(row.label, `${path}.label`),
+  };
+}
+
+const photosJson = object(root.photos, "site.photos");
+export const photos = {
+  clinic: parsePhoto(photosJson.clinic, "site.photos.clinic"),
+  doctor: parsePhoto(photosJson.doctor, "site.photos.doctor"),
+  treatment: parsePhoto(photosJson.treatment, "site.photos.treatment"),
+};
+
+function parsePhotoArray(value: unknown, path: string): PhotoAsset[] {
+  return array(value, path).map((item, index) => parsePhoto(item, `${path}[${index}]`));
+}
+
+export const infrastructurePhotos = parsePhotoArray(root.infrastructurePhotos, "site.infrastructurePhotos");
+export const galleryPhotos = parsePhotoArray(root.galleryPhotos, "site.galleryPhotos");
+export const certificatePhotos = parsePhotoArray(root.certificatePhotos, "site.certificatePhotos");
+
+const policyPhotosJson = object(root.policyPhotos, "site.policyPhotos");
+export const policyPhotos = {
+  vision: parsePhoto(policyPhotosJson.vision, "site.policyPhotos.vision"),
+  mission: parsePhoto(policyPhotosJson.mission, "site.policyPhotos.mission"),
+  quality: parsePhoto(policyPhotosJson.quality, "site.policyPhotos.quality"),
+};
+
+export const homepageSlides: HomepageSlide[] = array(root.homepageSlides, "site.homepageSlides").map((item, index) => {
+  const path = `site.homepageSlides[${index}]`;
+  const row = object(item, path);
+  return {
+    title: string(row.title, `${path}.title`),
+    text: string(row.text, `${path}.text`),
+    image: parsePhoto(row.image, `${path}.image`),
+  };
+});
+
+function parseIconRecord(value: unknown, path: string): IconRecord {
+  const row = object(value, path);
+  return {
+    icon: icon(row.icon, `${path}.icon`),
+    title: string(row.title, `${path}.title`),
+    text: string(row.text, `${path}.text`),
+  };
+}
+
+export const ages = array(root.ages, "site.ages").map((item, index) => {
+  const path = `site.ages[${index}]`;
+  const row = object(item, path);
+  return {
+    icon: icon(row.icon, `${path}.icon`),
+    title: string(row.title, `${path}.title`),
+    text: string(row.text, `${path}.text`),
+    tags: strings(row.tags, `${path}.tags`),
+  };
+});
+
+export const promises = array(root.promises, "site.promises").map((item, index) => parseIconRecord(item, `site.promises[${index}]`));
+export const features = array(root.features, "site.features").map((item, index) => parseIconRecord(item, `site.features[${index}]`));
+
+const doctorJson = object(root.doctor, "site.doctor");
+export const doctor = {
+  name: string(doctorJson.name, "site.doctor.name"),
+  title: string(doctorJson.title, "site.doctor.title"),
+  registration: string(doctorJson.registration, "site.doctor.registration"),
+  since: number(doctorJson.since, "site.doctor.since"),
+  education: array(doctorJson.education, "site.doctor.education").map((item, index) => {
+    const path = `site.doctor.education[${index}]`;
+    const row = object(item, path);
+    return {
+      degree: string(row.degree, `${path}.degree`),
+      institution: string(row.institution, `${path}.institution`),
+    };
+  }),
+  biography: strings(doctorJson.biography, "site.doctor.biography"),
+  vision: string(doctorJson.vision, "site.doctor.vision"),
+  mission: string(doctorJson.mission, "site.doctor.mission"),
+  qualityPolicy: string(doctorJson.qualityPolicy, "site.doctor.qualityPolicy"),
+};
+
+export const hours = array(root.hours, "site.hours").map((item, index) => {
+  const path = `site.hours[${index}]`;
+  const row = object(item, path);
+  return {
+    day: string(row.day, `${path}.day`),
+    time: string(row.time, `${path}.time`),
+  };
+});
+
+export const seoCopy = strings(root.seoCopy, "site.seoCopy");
+export const reviews: Review[] = array(root.reviews, "site.reviews").map((item, index) => {
+  const path = `site.reviews[${index}]`;
+  const row = object(item, path);
+  return {
+    name: string(row.name, `${path}.name`),
+    text: string(row.text, `${path}.text`),
+  };
+});
+export const faqs: Faq[] = array(root.faqs, "site.faqs").map((item, index) => {
+  const path = `site.faqs[${index}]`;
+  const row = object(item, path);
+  return {
+    q: string(row.q, `${path}.q`),
+    a: string(row.a, `${path}.a`),
+    featured: bool(row.featured, `${path}.featured`),
+  };
+});
+export const featuredFaqs = faqs.filter((faq) => faq.featured);
+
+export const treatments: Treatment[] = array(treatmentJson, "treatments").map((item, index) => {
+  const path = `treatments[${index}]`;
+  const row = object(item, path);
+  const category = string(row.category, `${path}.category`);
+  if (!["Preventive", "Restorative", "Cosmetic", "Surgical", "Kids"].includes(category)) {
+    throw new Error(`Invalid content JSON at ${path}.category: unknown treatment category.`);
+  }
+  return {
+    name: string(row.name, `${path}.name`),
+    slug: string(row.slug, `${path}.slug`),
+    category: category as TreatmentCategory,
+    icon: icon(row.icon, `${path}.icon`),
+    description: string(row.description, `${path}.description`),
+    intro: string(row.intro, `${path}.intro`),
+    metaTitle: string(row.metaTitle, `${path}.metaTitle`),
+    metaDescription: string(row.metaDescription, `${path}.metaDescription`),
+    legacyPaths: strings(row.legacyPaths, `${path}.legacyPaths`),
+    sections: parseSections(row.sections, `${path}.sections`),
+  };
+});
+
+const byCategory = (...categories: TreatmentCategory[]) =>
+  categories.flatMap((category) => treatments.filter((treatment) => treatment.category === category));
 
 export const treatmentGroups = [
   { title: "Everyday care", text: "Keep teeth and gums healthy", items: byCategory("Preventive", "Kids") },
@@ -83,20 +264,39 @@ export const treatmentGroups = [
   { title: "Gentle surgery", text: "Safe, calm and comfortable", items: byCategory("Surgical") },
 ];
 
-export const reviews = [
-  { name: "Aum Desai", text: "Had a very good experience with Dr. Archana for my wisdom tooth extraction. She explained everything clearly and made me feel comfortable throughout. The procedure went smoothly and the staff was friendly and supportive. Would definitely recommend this clinic." },
-  { name: "Kraft N Krati", text: "Dr. Archana was very gentle and explained every step of my son’s tooth extraction, which really helped calm him — he felt comfortable with the doctor. The office was spotless and easy to find. Highly recommended for kids as well as adults." },
-  { name: "Rahul Mishra", text: "Had a root canal and an extraction in a month. The dentist was patient, explained everything and made sure I was okay the whole time. No scary surprises, no rush. Pricing was clear too. 5 stars — if you want someone who actually cares." },
-  { name: "Divya", text: "You are an amazing dentist who works with great care and dedication. Thank you for making every treatment comfortable and giving such wonderful care!" },
-  { name: "Sunayna Thakur", text: "Exceptional service and great hospitality provided by Dr. Archana. The procedures were carried out very professionally." },
-  { name: "Komal Agrawal", text: "Good experience, and the doctor explained my issues in detail." },
+export const blogPosts: BlogPost[] = array(blogJson, "blog").map((item, index) => {
+  const path = `blog[${index}]`;
+  const row = object(item, path);
+  const publishedAt = string(row.publishedAt, `${path}.publishedAt`);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(publishedAt)) {
+    throw new Error(`Invalid content JSON at ${path}.publishedAt: expected YYYY-MM-DD.`);
+  }
+  return {
+    slug: string(row.slug, `${path}.slug`),
+    title: string(row.title, `${path}.title`),
+    publishedAt,
+    author: string(row.author, `${path}.author`),
+    excerpt: string(row.excerpt, `${path}.excerpt`),
+    image: parsePhoto(row.image, `${path}.image`),
+    sections: parseSections(row.sections, `${path}.sections`),
+    sources: array(row.sources, `${path}.sources`).map((source, sourceIndex) => {
+      const sourcePath = `${path}.sources[${sourceIndex}]`;
+      const sourceRow = object(source, sourcePath);
+      return {
+        label: string(sourceRow.label, `${sourcePath}.label`),
+        url: string(sourceRow.url, `${sourcePath}.url`),
+      };
+    }),
+  };
+});
+
+export const nav = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Treatments", href: "/treatments" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Journal", href: "/blog" },
+  { label: "Contact", href: "/contact" },
 ];
 
-export const faqs = [
-  { q: "What should I expect during my first visit?", a: "We review your medical history, do a comprehensive dental exam, take X-rays if needed, and talk you through any treatment plan before anything begins." },
-  { q: "I’m nervous about the dentist. Can you help?", a: "Absolutely. We take a calm, patient-centred approach — every step is explained, nothing is rushed, and you can pause whenever you need to." },
-  { q: "Do you treat children?", a: "Yes. We offer pediatric dentistry and focus on making every child’s visit comfortable and positive." },
-  { q: "How do I know if I need a root canal?", a: "Severe tooth pain, lingering sensitivity to hot or cold, swollen gums or a darkening tooth are common signs. An exam and X-ray will confirm it." },
-  { q: "What are dental implants?", a: "A permanent replacement for a missing tooth — a titanium post placed in the jawbone topped with a crown that looks and works like a natural tooth." },
-  { q: "How often should I visit the dentist?", a: "Every six months for a check-up and cleaning, or more often if your dentist recommends it for your oral health." },
-];

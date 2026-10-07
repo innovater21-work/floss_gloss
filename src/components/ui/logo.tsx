@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { cn } from "@/lib/cn";
 import { logo } from "@/content/site";
@@ -25,7 +26,7 @@ export function Logo({
 }) {
   const [failed, setFailed] = useState(false);
   return (
-    <a href="#" className={cn("flex shrink-0 items-center", className)} aria-label="Floss & Gloss Dental Clinic — home">
+    <Link href="/" className={cn("flex shrink-0 items-center", className)} aria-label="Floss & Gloss Dental Clinic — home">
       {failed ? (
         <span className="flex items-center gap-3">
           <span
@@ -51,6 +52,8 @@ export function Logo({
           onError={() => setFailed(true)}
         />
       )}
-    </a>
+    </Link>
   );
 }
+
+
