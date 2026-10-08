@@ -1,6 +1,6 @@
 /* =========================================================
-   Floss & Gloss — "Warm Family" design system
-   Palette: Brand — Indigo & Teal
+   Floss & Gloss - "Warm Family" design system
+   Palette: Brand - Indigo & Teal
    ---------------------------------------------------------
    Framework-agnostic design tokens. Every colour, radius,
    font and type size in the site reads from these variables.
@@ -10,11 +10,11 @@
 
 :root {
   /* ---------- Colour: brand ---------- */
-  --fg-primary: #332c84;      /* Indigo — main actions, logo mark, icons on light */
+  --fg-primary: #332c84;      /* Indigo - main actions, logo mark, icons on light */
   --fg-on-primary: #ffffff;
-  --fg-accent: #068ca0;       /* Teal — highlights, eyebrows, secondary CTAs */
+  --fg-accent: #068ca0;       /* Teal - highlights, eyebrows, secondary CTAs */
   --fg-on-accent: #ffffff;
-  --fg-soft: #e3f3f6;         /* Teal wash — alternating cards, open FAQ, chips */
+  --fg-soft: #e3f3f6;         /* Teal wash - alternating cards, open FAQ, chips */
 
   /* ---------- Colour: surfaces ---------- */
   --fg-bg: #ffffff;           /* page background */

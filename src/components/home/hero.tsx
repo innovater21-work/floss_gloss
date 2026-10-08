@@ -49,7 +49,7 @@ export function Hero() {
         </h1>
 
         <p className="mx-auto mt-6 mb-[34px] max-w-[620px] text-[19px] text-muted">
-          Gentle, unhurried dentistry for every age — with a doctor who explains everything, and a clinic your kids
+          Gentle, unhurried dentistry for every age - with a doctor who explains everything, and a clinic your kids
           won&apos;t dread visiting.
         </p>
 

@@ -11,7 +11,7 @@ import { logo } from "@/content/site";
 export const metadata: Metadata = {
   metadataBase: new URL("https://floss-gloss.in"),
   title: {
-    default: "Floss & Gloss — Family Dental Clinic in Shela, Ahmedabad",
+    default: "Floss & Gloss - Family Dental Clinic in Shela, Ahmedabad",
     template: "%s | Floss & Gloss",
   },
   description: "Gentle, unhurried family dentistry in Shela, Ahmedabad. Meet Dr. Archana Mal, MDS Periodontics. Sunday appointments by request.",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     siteName: "Floss & Gloss Dental Clinic",
-    title: "Floss & Gloss — Family Dental Clinic in Shela, Ahmedabad",
+    title: "Floss & Gloss - Family Dental Clinic in Shela, Ahmedabad",
     description: "Gentle, unhurried dentistry for every age in Shela, Ahmedabad.",
     url: "https://floss-gloss.in/",
     images: [{ url: logo.src, width: logo.width, height: logo.height, alt: "Floss & Gloss Dental Clinic" }],

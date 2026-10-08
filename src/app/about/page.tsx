@@ -20,7 +20,7 @@ export default function AboutPage() {
       <section className="section-y pt-0!">
         <div className="wrap grid grid-cols-[.85fr_1.15fr] items-start gap-16 max-lg:grid-cols-1">
           <div className="relative isolate max-w-[460px]">
-            <Photo {...photos.doctor} className="aspect-[4/5] rounded-arch-lg" />
+            <Photo {...photos.aboutDoctor} className="aspect-[4/5] rounded-arch-lg" />
             <div aria-hidden="true" className="absolute inset-[18px_-18px_-18px_18px] z-[-1] rounded-arch-lg border-2 border-accent" />
           </div>
           <div>

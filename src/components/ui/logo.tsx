@@ -8,7 +8,7 @@ import { logo } from "@/content/site";
 import { Icon } from "./icon";
 
 /**
- * The clinic logo (logo.png from floss-gloss.in — see `logo` in src/content/site.ts).
+ * The clinic logo (logo.png from floss-gloss.in - see `logo` in src/content/site.ts).
  * `tone="dark"` renders it as a white silhouette for the dark footer band.
  * If the file is missing it falls back to a text wordmark so the layout holds.
  */
@@ -26,7 +26,7 @@ export function Logo({
 }) {
   const [failed, setFailed] = useState(false);
   return (
-    <Link href="/" className={cn("flex shrink-0 items-center", className)} aria-label="Floss & Gloss Dental Clinic — home">
+    <Link href="/" className={cn("flex shrink-0 items-center", className)} aria-label="Floss & Gloss Dental Clinic - home">
       {failed ? (
         <span className="flex items-center gap-3">
           <span

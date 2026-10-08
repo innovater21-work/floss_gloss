@@ -57,11 +57,11 @@ export function BookingRequestForm() {
         <input aria-hidden="true" autoComplete="off" className="absolute -left-[10000px] h-px w-px" name="website" tabIndex={-1} type="text" />
         <div className="grid grid-cols-2 gap-4 max-sm:grid-cols-1">
           <label className="grid gap-1.5 text-[14px] font-bold">
-            Your name <span className="text-accent" aria-hidden="true">*</span>
+            <span>Your name <span className="text-[#c62828]" aria-hidden="true">*</span></span>
             <input suppressHydrationWarning name="name" autoComplete="name" required className={fieldClass} />
           </label>
           <label className="grid gap-1.5 text-[14px] font-bold">
-            Phone number <span className="text-accent" aria-hidden="true">*</span>
+            <span>Phone number <span className="text-[#c62828]" aria-hidden="true">*</span></span>
             <input suppressHydrationWarning name="phone" type="tel" autoComplete="tel" required className={fieldClass} />
           </label>
         </div>
@@ -73,11 +73,11 @@ export function BookingRequestForm() {
 
         <div className="grid grid-cols-2 gap-4 max-sm:grid-cols-1">
           <label className="grid gap-1.5 text-[14px] font-bold">
-            Preferred date <span className="text-accent" aria-hidden="true">*</span>
+            <span>Preferred date <span className="text-[#c62828]" aria-hidden="true">*</span></span>
             <input suppressHydrationWarning name="date" type="date" required className={fieldClass} />
           </label>
           <label className="grid gap-1.5 text-[14px] font-bold">
-            Preferred clinic hours <span className="text-accent" aria-hidden="true">*</span>
+            <span>Preferred clinic hours <span className="text-[#c62828]" aria-hidden="true">*</span></span>
             <select suppressHydrationWarning name="hours" required defaultValue="" className={fieldClass}>
               <option value="" disabled>Select a time window</option>
               {preferredWindows.map((item) => <option key={item.value} value={item.value}>{item.label}</option>)}

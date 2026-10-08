@@ -22,67 +22,110 @@
     "serviceAreas": "Shela, Bopal, South Bopal, Applewoods & Shilaj"
   },
   "logo": {
-    "src": "https://floss-gloss.in/images/logo.png",
+    "src": "/images/logo.png",
     "width": 269,
     "height": 81
   },
   "photos": {
-    "clinic": { "src": "https://floss-gloss.in/images/infrastructure/1.jpg", "alt": "The Floss & Gloss clinic", "label": "Our clinic" },
-    "doctor": { "src": "https://floss-gloss.in/images/dr-archana-mal.png", "alt": "Dr. Archana Mal at Floss & Gloss Dental Clinic", "label": "Dr. Archana" },
-    "treatment": { "src": "https://floss-gloss.in/images/infrastructure/3.jpg", "alt": "A treatment room at Floss & Gloss", "label": "Treatment room" }
+    "clinic": {"src":"/images/clinic/clinic-entrance-edited.webp","label":"Clinic entrance","alt":"Entrance to Floss & Gloss Dental Clinic"},
+    "doctor": {"src":"/images/clinic/dr-archana-portrait.webp","label":"Dr. Archana Mal","alt":"Portrait of Dr. Archana Mal at the clinic","objectPosition":"50% 24%"},
+    "doctorFeature": {"src":"/images/clinic/dr-archana-at-desk.webp","label":"Dr. Archana at the clinic","alt":"Dr. Archana Mal at her desk"},
+    "aboutDoctor": {"src":"/images/clinic/dr-archana-portrait-close.webp","label":"Meet Dr. Archana","alt":"Portrait of Dr. Archana Mal"},
+    "treatment": {"src":"/images/clinic/dental-treatment-01.webp","label":"Dental care in progress","alt":"A patient receiving dental care at Floss & Gloss"}
   },
   "infrastructurePhotos": [
-    { "src": "https://floss-gloss.in/images/infrastructure/1.jpg", "alt": "Floss & Gloss Dental Clinic infrastructure 1", "label": "Clinic interior 1" },
-    { "src": "https://floss-gloss.in/images/infrastructure/2.jpg", "alt": "Floss & Gloss Dental Clinic infrastructure 2", "label": "Clinic interior 2" },
-    { "src": "https://floss-gloss.in/images/infrastructure/3.jpg", "alt": "Floss & Gloss Dental Clinic infrastructure 3", "label": "Clinic interior 3" },
-    { "src": "https://floss-gloss.in/images/infrastructure/4.jpg", "alt": "Floss & Gloss Dental Clinic infrastructure 4", "label": "Clinic interior 4" },
-    { "src": "https://floss-gloss.in/images/infrastructure/5.jpg", "alt": "Floss & Gloss Dental Clinic infrastructure 5", "label": "Clinic interior 5" },
-    { "src": "https://floss-gloss.in/images/infrastructure/6.jpg", "alt": "Floss & Gloss Dental Clinic infrastructure 6", "label": "Clinic interior 6" },
-    { "src": "https://floss-gloss.in/images/infrastructure/7.jpg", "alt": "Floss & Gloss Dental Clinic infrastructure 7", "label": "Clinic interior 7" }
+    {"src":"/images/clinic/patient-consultation-01.webp","label":"Patient consultation","alt":"A patient discussing dental care with the dentist"},
+    {"src":"/images/clinic/clinic-building-01.webp","label":"Clinic building","alt":"The building where Floss & Gloss Dental Clinic is located"}
   ],
-  "galleryPhotos": [
-    { "src": "https://floss-gloss.in/images/infrastructure/1.jpg", "alt": "Floss & Gloss Dental Clinic infrastructure 1", "label": "Clinic interior 1" },
-    { "src": "https://floss-gloss.in/images/infrastructure/2.jpg", "alt": "Floss & Gloss Dental Clinic infrastructure 2", "label": "Clinic interior 2" },
-    { "src": "https://floss-gloss.in/images/infrastructure/3.jpg", "alt": "Floss & Gloss Dental Clinic infrastructure 3", "label": "Clinic interior 3" },
-    { "src": "https://floss-gloss.in/images/infrastructure/4.jpg", "alt": "Floss & Gloss Dental Clinic infrastructure 4", "label": "Clinic interior 4" }
+  "galleryGroups": [
+    {
+      "title": "Clinic exteriors",
+      "description": "Street and entrance views of Floss & Gloss.",
+      "photos": [
+        {"src":"/images/clinic/clinic-building-02.webp","label":"Floss & Gloss outside","alt":"Exterior view of the Floss & Gloss clinic building"},
+        {"src":"/images/clinic/clinic-building-03.webp","label":"Clinic exterior","alt":"Street view of the clinic building"},
+        {"src":"/images/clinic/clinic-building-04.webp","label":"Find the clinic","alt":"Street-facing exterior of the clinic building"},
+        {"src":"/images/clinic/clinic-building-05.webp","label":"The clinic on Orchid Sky Road","alt":"Exterior of the building on Orchid Sky Road"}
+      ]
+    },
+    {
+      "title": "Meet Dr. Archana",
+      "description": "Portraits and moments from the clinic.",
+      "photos": [
+        {"src":"/images/clinic/dr-archana-at-desk-wide.webp","label":"Dr. Archana at work","alt":"Dr. Archana Mal in her clinic office"},
+        {"src":"/images/clinic/dr-archana-portrait-seated.webp","label":"Dr. Archana in her office","alt":"Dr. Archana Mal seated at her clinic desk"}
+      ]
+    },
+    {
+      "title": "Care in progress",
+      "description": "A closer look at treatment-room care.",
+      "photos": [
+        {"src":"/images/clinic/dental-treatment-02.webp","label":"Treatment room","alt":"Dental treatment taking place in the clinic treatment room"},
+        {"src":"/images/clinic/dental-treatment-03.webp","label":"Care in the treatment room","alt":"A dental professional caring for a patient"},
+        {"src":"/images/clinic/dental-treatment-05.webp","label":"Patient care","alt":"A dental professional treating a patient"}
+      ]
+    },
+    {
+      "title": "Patient consultations",
+      "description": "Conversations about care and next steps.",
+      "photos": [
+        {"src":"/images/clinic/patient-consultation-02.webp","label":"A closer conversation","alt":"A patient consultation with Dr. Archana Mal"},
+        {"src":"/images/clinic/patient-consultation-03.webp","label":"Planning a visit","alt":"A patient reviewing dental information with the dentist"}
+      ]
+    },
+    {
+      "title": "Our clinic team",
+      "description": "Meet the people who help care for patients.",
+      "photos": [
+        {"src":"/images/clinic/front-desk-team.webp","label":"Clinic team","alt":"The clinic team at the front desk"}
+      ]
+    },
+    {
+      "title": "Reception & waiting",
+      "description": "A glimpse of the clinic’s welcome and waiting spaces.",
+      "photos": [
+        {"src":"/images/clinic/clinic-reception.webp","label":"Clinic reception","alt":"Reception area at Floss & Gloss Dental Clinic"},
+        {"src":"/images/clinic/clinic-waiting-area.webp","label":"Waiting area","alt":"A patient seated in the clinic waiting area"}
+      ]
+    }
   ],
   "certificatePhotos": [
-    { "src": "https://floss-gloss.in/images/certificates/1.jpg", "alt": "Award and achievement certificate of Dr. Archana Mal 1", "label": "Award and achievement 1" },
-    { "src": "https://floss-gloss.in/images/certificates/2.jpg", "alt": "Award and achievement certificate of Dr. Archana Mal 2", "label": "Award and achievement 2" },
-    { "src": "https://floss-gloss.in/images/certificates/3.jpg", "alt": "Award and achievement certificate of Dr. Archana Mal 3", "label": "Award and achievement 3" },
-    { "src": "https://floss-gloss.in/images/certificates/4.jpg", "alt": "Award and achievement certificate of Dr. Archana Mal 4", "label": "Award and achievement 4" }
+    { "src": "/images/certificates/1.jpg", "alt": "Award and achievement certificate of Dr. Archana Mal 1", "label": "Award and achievement 1" },
+    { "src": "/images/certificates/2.jpg", "alt": "Award and achievement certificate of Dr. Archana Mal 2", "label": "Award and achievement 2" },
+    { "src": "/images/certificates/3.jpg", "alt": "Award and achievement certificate of Dr. Archana Mal 3", "label": "Award and achievement 3" },
+    { "src": "/images/certificates/4.jpg", "alt": "Award and achievement certificate of Dr. Archana Mal 4", "label": "Award and achievement 4" }
   ],
   "policyPhotos": {
-    "vision": { "src": "https://floss-gloss.in/images/why/1.png", "alt": "Vision of Floss & Gloss Dental Clinic", "label": "Clinic vision" },
-    "mission": { "src": "https://floss-gloss.in/images/why/2.png", "alt": "Mission of Floss & Gloss Dental Clinic", "label": "Clinic mission" },
-    "quality": { "src": "https://floss-gloss.in/images/why/3.png", "alt": "Quality policy of Floss & Gloss Dental Clinic", "label": "Quality policy" }
+    "vision": { "src": "/images/why/1.png", "alt": "Vision of Floss & Gloss Dental Clinic", "label": "Clinic vision" },
+    "mission": { "src": "/images/why/2.png", "alt": "Mission of Floss & Gloss Dental Clinic", "label": "Clinic mission" },
+    "quality": { "src": "/images/why/3.png", "alt": "Quality policy of Floss & Gloss Dental Clinic", "label": "Quality policy" }
   },
   "homepageSlides": [
-    { "title": "Premium dental treatments", "text": "Thoughtful care for routine, restorative, cosmetic and family dental needs.", "image": { "src": "https://floss-gloss.in/images/bg/1.jpg", "alt": "Dental care at Floss & Gloss", "label": "Premium dental treatments" } },
-    { "title": "Comprehensive care under one roof", "text": "Explore the clinic’s treatment options and arrange a conversation with the team.", "image": { "src": "https://floss-gloss.in/images/bg/2.jpg", "alt": "Comprehensive dental care at Floss & Gloss", "label": "Comprehensive dental care" } },
-    { "title": "High standards of hygiene", "text": "A careful, welcoming clinic with hygiene practices at every step.", "image": { "src": "https://floss-gloss.in/images/bg/3.jpg", "alt": "Hygiene-focused care at Floss & Gloss", "label": "Hygiene-focused care" } }
+    {"title":"Thoughtful dental care","text":"Explore our calm treatment spaces and the people who will care for your family.","image":{"src":"/images/clinic/dental-treatment-04.webp","label":"A calm treatment setting","alt":"Dental care in the Floss & Gloss treatment room"}},
+    {"title":"Care for the whole family","text":"Clear conversations help every patient feel more at ease before treatment.","image":{"src":"/images/clinic/family-consultation.webp","label":"Family consultation","alt":"A family speaking with Dr. Archana during a clinic consultation"}},
+    {"title":"A clinic that feels welcoming","text":"Get to know our team and the clinic before planning your visit.","image":{"src":"/images/clinic/clinic-care-team.webp","label":"Our care team","alt":"Members of the Floss & Gloss care team at reception"}}
   ],
   "ages": [
     { "icon": "kid", "title": "Little ones", "text": "Fear-free first visits that build healthy habits early.", "tags": ["Pediatric care", "Fillings", "Habit advice"] },
     { "icon": "align", "title": "Teens", "text": "Straighter smiles and wisdom-tooth care, done right.", "tags": ["Braces", "Invisalign", "Wisdom teeth"] },
     { "icon": "smile", "title": "Adults", "text": "Fix pain fast, protect your gums and love your smile.", "tags": ["Root canal", "Smile design", "Veneers"] },
-    { "icon": "heart", "title": "Seniors", "text": "Comfortable replacements that let you eat and smile freely.", "tags": ["Implants", "Dentures", "Gum care"] }
+    { "icon": "denture", "title": "Seniors", "text": "Comfortable replacements that let you eat and smile freely.", "tags": ["Implants", "Dentures", "Gum care"] }
   ],
   "promises": [
     { "icon": "chat", "title": "Every step explained", "text": "You'll always know what's happening and why." },
     { "icon": "clock", "title": "Never rushed", "text": "Appointment-based visits mean no waiting and no hurry." },
     { "icon": "card", "title": "Clear pricing", "text": "Costs discussed upfront, with multiple payment options." },
-    { "icon": "kid", "title": "Great with kids", "text": "Patient, playful care that calms little nerves." }
+    { "icon": "family", "title": "Great with kids", "text": "Patient, playful care that calms little nerves." }
   ],
   "features": [
     { "icon": "users", "title": "Experienced team", "text": "A trained team focused on careful, patient-centred dental care." },
-    { "icon": "uv", "title": "Instrument sterilisation", "text": "Autoclave sterilisation is part of the clinic's instrument-safety process." },
+    { "icon": "autoclave", "title": "Instrument sterilisation", "text": "Autoclave sterilisation is part of the clinic's instrument-safety process." },
     { "icon": "xray", "title": "Digital X-rays", "text": "Digital imaging supports diagnosis when an X-ray is clinically needed." },
     { "icon": "shield", "title": "Additional hygiene steps", "text": "The clinic describes UV-cabinet treatment as an additional step in its sterilising process." },
     { "icon": "check", "title": "Hygiene focused", "text": "Hygiene protocols are followed throughout patient care." },
     { "icon": "heart", "title": "A calm setting", "text": "A welcoming atmosphere helps make visits feel more comfortable." },
-    { "icon": "chat", "title": "Patient-friendly staff", "text": "The team aims to make each visit supportive and easy to understand." },
-    { "icon": "clock", "title": "Appointment based", "text": "Appointments help the team respect your time and avoid unnecessary waiting." },
+    { "icon": "care", "title": "Patient-friendly staff", "text": "The team aims to make each visit supportive and easy to understand." },
+    { "icon": "cal", "title": "Appointment based", "text": "Appointments help the team respect your time and avoid unnecessary waiting." },
     { "icon": "car", "title": "On-site parking", "text": "Parking is available at the clinic for visiting families." }
   ],
   "doctor": {

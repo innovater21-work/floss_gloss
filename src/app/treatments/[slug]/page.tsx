@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Icon } from "@/components/ui/icon";
-import { Photo } from "@/components/ui/photo";
 import { Breadcrumbs, ClinicCTA, PageIntro } from "@/components/site/page-elements";
-import { clinic, photos, treatments } from "@/content/site";
+import { clinic, treatments } from "@/content/site";
 
 type PageProps = { params: Promise<{ slug: string }> };
 export const dynamicParams = false;
@@ -61,7 +60,6 @@ export default async function TreatmentDetailPage({ params }: PageProps) {
             <p className="mt-8 rounded-md border-l-4 border-accent bg-bg-alt p-5 text-[14px] text-muted">Treatment suitability, steps and outcomes vary. The dentist will assess your needs and explain options before care begins.</p>
           </div>
           <aside className="rounded-xl border border-line bg-surface p-7">
-            <Photo {...photos.treatment} className="mb-7 aspect-[4/3] rounded-arch" />
             <h2 className="mb-3 font-display text-[26px]">Talk with the dentist</h2>
             <p className="mb-5 text-[15px] text-muted">Bring your questions and share what matters to you. We will explain the next step and discuss costs before treatment.</p>
             <div className="grid gap-3">

@@ -20,7 +20,7 @@ export default function BlogPage() {
       <Breadcrumbs items={[{ label: "Journal" }]} />
       <PageIntro eyebrow="From the clinic" title="Small notes for healthier smiles." description="Straightforward information for families. For personal advice, please speak with a dental professional." />
       <section className="section-y pt-0!">
-        <div className="wrap grid grid-cols-2 gap-5 max-md:grid-cols-1">
+        <div className="wrap grid grid-cols-2 gap-5 max-md:grid-cols-1 grid-center-last-two grid-center-last-two-gap-5">
           {blogPosts.map((post, index) => (
             <article key={post.slug} className={"flex flex-col rounded-card border p-7 " + (index % 3 === 0 ? "border-transparent bg-soft" : "border-line bg-surface")}>
               <Photo {...post.image} sizes="(max-width: 640px) 100vw, 50vw" className="mb-5 aspect-[16/9] rounded-lg" />

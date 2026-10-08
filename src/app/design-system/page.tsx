@@ -7,14 +7,14 @@ import { Pill } from "@/components/ui/pill";
 import { Eyebrow, SectionHeader, Stars } from "@/components/ui/typography";
 
 export const metadata: Metadata = {
-  title: "Design system — Floss & Gloss",
+  title: "Design system - Floss & Gloss",
   robots: { index: false },
 };
 
 const colors = [
-  ["primary", "--fg-primary", "#332C84", "Indigo — main actions, logo mark"],
-  ["accent", "--fg-accent", "#068CA0", "Teal — highlights, eyebrows, secondary CTA"],
-  ["soft", "--fg-soft", "#E3F3F6", "Teal wash — tinted cards, open FAQ"],
+  ["primary", "--fg-primary", "#332C84", "Indigo - main actions, logo mark"],
+  ["accent", "--fg-accent", "#068CA0", "Teal - highlights, eyebrows, secondary CTA"],
+  ["soft", "--fg-soft", "#E3F3F6", "Teal wash - tinted cards, open FAQ"],
   ["bg", "--fg-bg", "#FFFFFF", "Page background"],
   ["bg-alt", "--fg-bg-alt", "#F3F5FB", "Banded sections, hover"],
   ["surface", "--fg-surface", "#FFFFFF", "Cards"],
@@ -97,7 +97,7 @@ export default function DesignSystemPage() {
           <div>
             <small className="text-[13px] font-bold text-muted">Body · Nunito Sans 17/1.6 · lead 19px · small 15px</small>
             <p className="max-w-[620px]">
-              Gentle, unhurried dentistry for every age — with a doctor who explains everything.
+              Gentle, unhurried dentistry for every age - with a doctor who explains everything.
             </p>
             <p className="max-w-[620px] text-[15px] text-muted">Fear-free first visits that build healthy habits early.</p>
           </div>

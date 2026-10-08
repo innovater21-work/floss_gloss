@@ -12,6 +12,7 @@ export function Photo({
   src,
   alt,
   label,
+  objectPosition,
   sizes = "(max-width: 640px) 100vw, 50vw",
   priority,
   className,
@@ -19,6 +20,7 @@ export function Photo({
   src?: string;
   alt: string;
   label: string;
+  objectPosition?: string;
   sizes?: string;
   priority?: boolean;
   className?: string;
@@ -41,6 +43,7 @@ export function Photo({
           fill
           sizes={sizes}
           preload={priority}
+          style={objectPosition ? { objectPosition } : undefined}
           className="z-[1] object-cover"
           onError={() => setFailed(true)}
         />

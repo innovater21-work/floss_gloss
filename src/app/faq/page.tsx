@@ -17,11 +17,15 @@ export default function FaqPage() {
       <section className="section-y pt-0!">
         <div className="wrap mx-auto max-w-[900px]">
           {faqs.map((faq, index) => (
-            <details key={faq.q} open={index === 0} className="group mb-3 rounded-md border border-line bg-surface px-6 py-5 open:border-transparent open:bg-soft">
+            <details key={faq.q} open={index === 0} className="faq-item group mb-3 rounded-md border border-line bg-surface px-6 py-5 transition-colors duration-300 open:border-transparent open:bg-soft">
               <summary className="flex cursor-pointer list-none items-start justify-between gap-4 font-display text-[21px] [&::-webkit-details-marker]:hidden">
-                {faq.q}<Icon name="plus" className="size-8 flex-none rounded-full bg-soft p-[7px] text-accent transition-all group-open:rotate-45 group-open:bg-accent group-open:text-on-accent" />
+                {faq.q}<Icon name="plus" className="size-8 flex-none rounded-full bg-soft p-[7px] text-accent transition-all duration-[250ms] group-open:rotate-45 group-open:bg-accent group-open:text-on-accent" />
               </summary>
-              <p className="mt-3 max-w-[760px] text-muted">{faq.a}</p>
+              <div className="faq-answer">
+                <div className="faq-answer__inner">
+                  <p className="mt-3 max-w-[760px] text-muted">{faq.a}</p>
+                </div>
+              </div>
             </details>
           ))}
         </div>

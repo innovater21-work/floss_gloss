@@ -20,7 +20,7 @@ export default function TreatmentsPage() {
         <section className="section-y pt-0!" key={group.title}>
           <div className="wrap">
             <SectionHeader eyebrow={group.text} title={group.title} className="mb-9" />
-            <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1">
+            <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1 grid-center-last-two">
               {group.items.map((treatment) => (
                 <Link key={treatment.slug} href={"/treatments/" + treatment.slug} className="group flex items-start gap-4 rounded-card border border-line bg-surface p-6 transition-transform hover:-translate-y-1 hover:border-accent">
                   <Icon name={treatment.icon} className="mt-1 size-12 rounded-full bg-soft p-3 text-accent" />

@@ -23,10 +23,6 @@ const nextConfig: NextConfig = {
     // Keep the app rooted here; otherwise Next discovers a package lock in the parent home folder.
     root: process.cwd(),
   },
-  images: {
-    // Logo and clinic photos are loaded from the live site.
-    remotePatterns: [{ protocol: "https", hostname: "floss-gloss.in", pathname: "/images/**" }],
-  },
   async redirects() {
     return [...pageRedirects, ...treatmentRedirects];
   },

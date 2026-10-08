@@ -5,7 +5,8 @@ import { iconNames, type IconName } from "@/components/ui/icon";
 
 type JsonObject = Record<string, unknown>;
 type IconRecord = { icon: IconName; title: string; text: string };
-type PhotoAsset = { src: string; alt: string; label: string };
+type PhotoAsset = { src: string; alt: string; label: string; objectPosition?: string };
+type PhotoGalleryGroup = { title: string; description: string; photos: PhotoAsset[] };
 
 export type TreatmentCategory = "Preventive" | "Restorative" | "Cosmetic" | "Surgical" | "Kids";
 export type TreatmentSection = { title: string; paragraphs: string[] };
@@ -126,6 +127,7 @@ function parsePhoto(value: unknown, path: string): PhotoAsset {
     src: string(row.src, `${path}.src`),
     alt: string(row.alt, `${path}.alt`),
     label: string(row.label, `${path}.label`),
+    objectPosition: row.objectPosition === undefined ? undefined : string(row.objectPosition, `${path}.objectPosition`),
   };
 }
 
@@ -133,6 +135,8 @@ const photosJson = object(root.photos, "site.photos");
 export const photos = {
   clinic: parsePhoto(photosJson.clinic, "site.photos.clinic"),
   doctor: parsePhoto(photosJson.doctor, "site.photos.doctor"),
+  doctorFeature: parsePhoto(photosJson.doctorFeature, "site.photos.doctorFeature"),
+  aboutDoctor: parsePhoto(photosJson.aboutDoctor, "site.photos.aboutDoctor"),
   treatment: parsePhoto(photosJson.treatment, "site.photos.treatment"),
 };
 
@@ -141,7 +145,17 @@ function parsePhotoArray(value: unknown, path: string): PhotoAsset[] {
 }
 
 export const infrastructurePhotos = parsePhotoArray(root.infrastructurePhotos, "site.infrastructurePhotos");
-export const galleryPhotos = parsePhotoArray(root.galleryPhotos, "site.galleryPhotos");
+export const galleryGroups: PhotoGalleryGroup[] = array(root.galleryGroups, "site.galleryGroups").map((item, index) => {
+  const path = `site.galleryGroups[${index}]`;
+  const row = object(item, path);
+  const groupPhotos = parsePhotoArray(row.photos, `${path}.photos`);
+  if (groupPhotos.length === 0) throw new Error(`Invalid content JSON at ${path}.photos: expected at least one photo.`);
+  return {
+    title: string(row.title, `${path}.title`),
+    description: string(row.description, `${path}.description`),
+    photos: groupPhotos,
+  };
+});
 export const certificatePhotos = parsePhotoArray(root.certificatePhotos, "site.certificatePhotos");
 
 const policyPhotosJson = object(root.policyPhotos, "site.policyPhotos");

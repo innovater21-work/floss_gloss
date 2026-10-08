@@ -10,7 +10,7 @@ export function AgesSection() {
         <SectionHeader
           eyebrow="For every age"
           title="One dentist for the whole family"
-          intro="From a toddler's first check-up to grandma's new dentures — care that grows with your family."
+          intro="From a toddler's first check-up to grandma's new dentures - care that grows with your family."
         />
         <div className="grid grid-cols-4 gap-5 max-lg:grid-cols-2 max-md:grid-cols-1">
           {ages.map((age, i) => {

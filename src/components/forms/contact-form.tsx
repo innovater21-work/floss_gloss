@@ -49,11 +49,11 @@ export function ContactForm({ subject = "Website enquiry", compact = false }: { 
       <input aria-hidden="true" autoComplete="off" className="absolute -left-[10000px] h-px w-px" name="website" tabIndex={-1} type="text" />
       <div className="grid grid-cols-2 gap-4 max-sm:grid-cols-1">
         <label className="grid gap-1.5 text-[14px] font-bold">
-          Your name <span className="text-accent" aria-hidden="true">*</span>
+          <span>Your name <span className="text-[#c62828]" aria-hidden="true">*</span></span>
           <input suppressHydrationWarning name="name" autoComplete="name" required className="min-h-12 rounded-md border border-line bg-bg px-4 font-body text-[16px] font-normal outline-none focus:border-accent focus:ring-2 focus:ring-accent/20" />
         </label>
         <label className="grid gap-1.5 text-[14px] font-bold">
-          Email <span className="text-accent" aria-hidden="true">*</span>
+          <span>Email <span className="text-[#c62828]" aria-hidden="true">*</span></span>
           <input suppressHydrationWarning name="email" type="email" autoComplete="email" required className="min-h-12 rounded-md border border-line bg-bg px-4 font-body text-[16px] font-normal outline-none focus:border-accent focus:ring-2 focus:ring-accent/20" />
         </label>
       </div>
@@ -62,11 +62,11 @@ export function ContactForm({ subject = "Website enquiry", compact = false }: { 
         <input suppressHydrationWarning name="phone" type="tel" autoComplete="tel" className="min-h-12 rounded-md border border-line bg-bg px-4 font-body text-[16px] font-normal outline-none focus:border-accent focus:ring-2 focus:ring-accent/20" />
       </label>
       <label className="grid gap-1.5 text-[14px] font-bold">
-        Subject <span className="text-accent" aria-hidden="true">*</span>
+        <span>Subject <span className="text-[#c62828]" aria-hidden="true">*</span></span>
         <input suppressHydrationWarning name="subject" defaultValue={subject} required className="min-h-12 rounded-md border border-line bg-bg px-4 font-body text-[16px] font-normal outline-none focus:border-accent focus:ring-2 focus:ring-accent/20" />
       </label>
       <label className="grid gap-1.5 text-[14px] font-bold">
-        How can we help? <span className="text-accent" aria-hidden="true">*</span>
+        <span>How can we help? <span className="text-[#c62828]" aria-hidden="true">*</span></span>
         <textarea suppressHydrationWarning name="message" required rows={compact ? 3 : 5} className="resize-y rounded-md border border-line bg-bg px-4 py-3 font-body text-[16px] font-normal outline-none focus:border-accent focus:ring-2 focus:ring-accent/20" />
       </label>
       <p className="text-[13px] text-muted">Submitting sends your message to the clinic through Resend. This website does not store submissions. Please don&apos;t include detailed medical information.</p>
