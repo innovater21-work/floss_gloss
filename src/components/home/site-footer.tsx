@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ButtonLink } from "@/components/ui/button";
+import { Icon } from "@/components/ui/icon";
 import { BookAppointmentButton } from "@/components/forms/kivi-booking-widget";
 import { Logo } from "@/components/ui/logo";
 import { clinic } from "@/content/site";
@@ -10,13 +11,13 @@ export function SiteFooter() {
       <div className="wrap">
         <div className="flex flex-wrap items-center justify-between gap-6 border-b border-dark-15 pb-10">
           <div>
-            <p className="mb-2 font-display text-[18px] text-accent-on-dark">A little more at ease, a little more smile.</p>
+            <p className="mb-2 font-display text-[18px] text-accent-on-dark">Care that helps you feel more at ease.</p>
             <h2 className="max-w-[620px] text-h2-xl">Let&apos;s get your family smiling.</h2>
           </div>
           <div className="flex flex-wrap gap-3">
             <BookAppointmentButton variant="accent">Book a visit</BookAppointmentButton>
-            <ButtonLink variant="outline-on-dark" href={clinic.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp us</ButtonLink>
-            <ButtonLink variant="outline-on-dark" href="/#callback-form">Request a callback</ButtonLink>
+            <ButtonLink variant="outline-on-dark" href={clinic.whatsapp} target="_blank" rel="noopener noreferrer"><Icon name="wa" /> WhatsApp us</ButtonLink>
+            <ButtonLink variant="outline-on-dark" href="/callback">Request a callback</ButtonLink>
           </div>
         </div>
         <div className="grid grid-cols-[1.4fr_1fr_1fr] gap-8 pt-9 text-[14px] text-dim max-md:grid-cols-1">

@@ -38,8 +38,9 @@ export function InfrastructureCarousel({ items }: { items: CarouselItem[] }) {
               <button key={item.src} type="button" className={`size-3 rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${index === activeIndex ? "bg-primary" : "bg-line hover:bg-muted"}`} aria-label={`Show clinic photo ${index + 1}`} aria-current={index === activeIndex ? "true" : undefined} onClick={() => setActiveIndex(index)} />
             ))}
           </div>
-          <div className="mt-6 flex justify-center">
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
             <ButtonLink variant="outline" href="/gallery">View infrastructure <Icon name="arrow" /></ButtonLink>
+            <ButtonLink variant="outline" href="/gallery#clinic-tour">Watch clinic tour <Icon name="arrow" /></ButtonLink>
           </div>
         </div>
       </div>

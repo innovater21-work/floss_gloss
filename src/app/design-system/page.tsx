@@ -99,7 +99,7 @@ export default function DesignSystemPage() {
             <p className="max-w-[620px]">
               Gentle, unhurried dentistry for every age - with a doctor who explains everything.
             </p>
-            <p className="max-w-[620px] text-[15px] text-muted">Fear-free first visits that build healthy habits early.</p>
+            <p className="max-w-[620px] text-[15px] text-muted">Gentle first visits help children build healthy habits early.</p>
           </div>
         </div>
       </Block>
@@ -136,7 +136,7 @@ export default function DesignSystemPage() {
         <div className="flex flex-wrap items-center gap-2.5">
           <Pill icon="star">5.0 on Google</Pill>
           <Pill size="sm" icon="grad">MDS Periodontics</Pill>
-          <Pill size="xs">Pediatric care</Pill>
+          <Pill size="xs">Paediatric care</Pill>
           <i className="rounded-pill bg-soft px-2.5 py-1 text-[12px] font-extrabold text-accent not-italic">3</i>
           <Stars />
           <GoogleLogo />

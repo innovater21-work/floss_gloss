@@ -16,7 +16,7 @@ export default function AboutPage() {
   return (
     <main>
       <Breadcrumbs items={[{ label: "About Dr. Archana" }]} />
-      <PageIntro eyebrow="Meet your dentist" title="A little more at ease, a little more smile." description="Get to know Dr. Archana Mal and the care philosophy behind Floss & Gloss." />
+      <PageIntro eyebrow="Meet your dentist" title="Care that helps you feel more at ease." description="Get to know Dr. Archana Mal and the care philosophy behind Floss & Gloss." />
       <section className="section-y pt-0!">
         <div className="wrap grid grid-cols-[.85fr_1.15fr] items-start gap-16 max-lg:grid-cols-1">
           <div className="relative isolate max-w-[460px]">

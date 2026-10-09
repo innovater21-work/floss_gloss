@@ -20,8 +20,8 @@ export function AnnouncementBar() {
         Call {clinic.phone}
       </a>
       <span className="mx-1">or</span>
-      <a className="underline decoration-white/50 underline-offset-2" href={clinic.whatsapp} target="_blank" rel="noopener noreferrer">
-        WhatsApp
+      <a className="inline-flex items-center gap-1 underline decoration-white/50 underline-offset-2" href={clinic.whatsapp} target="_blank" rel="noopener noreferrer">
+        <Icon name="wa" /> WhatsApp
       </a>
     </div>
   );
@@ -73,7 +73,7 @@ export function SiteHeader() {
   return (
     <header className="relative z-40 border-b border-line/60 bg-bg/95 backdrop-blur-sm">
       <div className="wrap flex min-h-[82px] items-center gap-4 max-md:min-h-[70px]">
-        <Logo priority imageClassName="h-14 w-auto max-md:h-11" />
+        <Logo priority imageClassName="h-16 w-auto max-md:h-12" />
         <nav id="mobile-navigation" aria-label="Main navigation" className={navClasses}>
           <Link className={LinkClass()} href="/" onClick={closeMenu}>Home</Link>
           <div className="relative" ref={aboutMenuRef}>
@@ -118,6 +118,7 @@ export function SiteHeader() {
           <Link className={LinkClass()} href="/faq" onClick={closeMenu}>FAQ</Link>
           <Link className={LinkClass()} href="/blog" onClick={closeMenu}>Journal</Link>
           <Link className={LinkClass()} href="/contact" onClick={closeMenu}>Contact</Link>
+          <Link className={LinkClass()} href="/callback" onClick={closeMenu}>Callback</Link>
         </nav>
         <div className="ml-auto flex items-center gap-2 lg:ml-3">
           <BookAppointmentButton size="sm" className="max-md:px-3 max-md:py-2 max-md:text-[13px]" onActivate={closeMenu}>

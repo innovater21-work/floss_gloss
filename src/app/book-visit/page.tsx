@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Icon } from "@/components/ui/icon";
 import { BookingRequestForm } from "@/components/forms/booking-request-form";
 import { BookAppointmentButton } from "@/components/forms/kivi-booking-widget";
 import { Breadcrumbs, PageIntro } from "@/components/site/page-elements";
@@ -34,7 +35,7 @@ export default function BookVisitPage() {
             <p className="mt-5 text-[14px] text-muted">Sunday visits are by appointment. KiviHealth shows the online availability; call if no suitable slot appears.</p>
             <div className="mt-5 grid gap-2 text-[14px]">
               <a className="font-bold text-primary underline underline-offset-2" href={clinic.phoneHref}>Call {clinic.phone}</a>
-              <a className="font-bold text-primary underline underline-offset-2" href={clinic.whatsapp} target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
+              <a className="inline-flex items-center gap-1 font-bold text-primary underline underline-offset-2" href={clinic.whatsapp} target="_blank" rel="noopener noreferrer"><Icon name="wa" />Message on WhatsApp</a>
             </div>
           </aside>
           <div className="grid gap-6">

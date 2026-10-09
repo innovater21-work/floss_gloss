@@ -104,7 +104,7 @@ export function ImageGallery({
               ref={(element) => { triggers.current[index] = element; }}
               type="button"
               className="group relative block aspect-[4/3] w-full overflow-hidden rounded-lg border border-line bg-bg-alt text-left focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
-              aria-label={isGrouped ? `Open ${card.title} photo collection, ${card.count} ${card.count === 1 ? "photo" : "photos"}` : `View ${card.item.label} full size`}
+              aria-label={isGrouped ? `Expand ${card.title} photo collection, ${card.count} ${card.count === 1 ? "photo" : "photos"}` : `Expand ${card.item.label} image to full size`}
               aria-haspopup="dialog"
               onClick={() => setActivePhoto({ groupIndex: card.groupIndex, photoIndex: card.photoIndex, triggerIndex: card.triggerIndex })}
             >
@@ -122,18 +122,16 @@ export function ImageGallery({
                 />
               )}
               <span aria-hidden="true" className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-2 bg-gradient-to-t from-ink/85 via-ink/25 to-transparent px-3 pt-14 pb-3 text-white">
-                <span className="inline-flex min-h-10 items-center gap-2 rounded-full border border-line bg-surface px-3 py-2 text-[12px] font-extrabold text-primary shadow-md transition-transform group-hover:-translate-y-0.5">
-                  <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" className="size-4">
-                    <circle cx="8.5" cy="8.5" r="5.25" stroke="currentColor" strokeWidth="1.8" />
-                    <path d="m12.5 12.5 4 4m-8-8v4m-2-2h4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+                <span className="grid size-11 shrink-0 place-items-center rounded-full border border-line bg-surface text-primary shadow-md transition-transform group-hover:-translate-y-0.5 group-hover:scale-105">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="size-5">
+                    <path d="M8 3H5a2 2 0 0 0-2 2v3m13-5h3a2 2 0 0 1 2 2v3M3 16v3a2 2 0 0 0 2 2h3m8 0h3a2 2 0 0 0 2-2v-3" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
-                  View full size
                 </span>
                 {isGrouped ? <span className="rounded-full bg-ink/75 px-3 py-2 text-[11px] font-bold backdrop-blur-sm">{card.count} {card.count === 1 ? "photo" : "photos"}</span> : null}
               </span>
             </button>
             <figcaption className="mt-3">
-              <p className="font-display text-[18px]">{card.title}</p>
+              <p className={`font-display leading-snug ${isGrouped ? "text-[18px]" : "text-[16px]"}`}>{card.title}</p>
               {isGrouped ? <p className="mt-1 text-[13px] text-muted">{card.description}</p> : null}
             </figcaption>
           </figure>

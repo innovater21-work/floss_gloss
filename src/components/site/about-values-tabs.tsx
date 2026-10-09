@@ -51,7 +51,9 @@ export function AboutValuesTabs({ items }: { items: ValueTab[] }) {
         <div>
           <p className="mb-2 text-[13px] font-extrabold uppercase tracking-[.1em] text-accent">Floss &amp; Gloss Dental Clinic</p>
           <h3 className="mb-3 font-display text-[32px]">{active.title}</h3>
-          <p className="text-[15px] leading-relaxed text-muted">{active.text}</p>
+          <div className="space-y-3 text-[15px] leading-relaxed text-muted">
+            {active.text.split(/\n{2,}/).map((paragraph, index) => <p key={`${active.id}-${index}`}>{paragraph}</p>)}
+          </div>
         </div>
       </section>
     </div>

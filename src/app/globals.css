@@ -60,31 +60,6 @@
   --breakpoint-xl: 1280px;
 }
 
-/* Keep an odd final card centered when a two-column row would otherwise be incomplete. */
-.grid-center-last-two {
-  --center-last-gap: 1rem;
-}
-
-.grid-center-last-two-gap-5 {
-  --center-last-gap: 1.25rem;
-}
-
-@media (min-width: 641px) {
-  .grid-center-last-two > :last-child:nth-child(odd) {
-    grid-column: 1 / -1;
-    justify-self: center;
-    width: calc((100% - var(--center-last-gap)) / 2);
-  }
-}
-
-@media (min-width: 641px) and (max-width: 1000px) {
-  .grid-center-last-tablet > :last-child:nth-child(odd) {
-    grid-column: 1 / -1;
-    justify-self: center;
-    width: calc((100% - 1rem) / 2);
-  }
-}
-
 /* =========================================================
    Base
    ========================================================= */

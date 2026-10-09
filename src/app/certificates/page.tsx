@@ -15,7 +15,7 @@ export default function CertificatesPage() {
   return (
     <main>
       <Breadcrumbs items={[{ label: "About", href: "/about" }, { label: "Credentials" }]} />
-      <PageIntro eyebrow="Professional background" title="Qualifications and achievements." description="Dr. Archana Mal’s listed education and registration details, alongside the certificates published by the clinic." />
+      <PageIntro eyebrow="Professional background" title="Qualifications and achievements." description="Dr. Archana Mal’s listed education and registration details, alongside certificates and professional highlights shared by the clinic." />
       <section className="section-y pt-0!">
         <div className="wrap grid grid-cols-2 gap-5 max-md:grid-cols-1">
           {doctor.education.map((entry, index) => (
@@ -41,8 +41,7 @@ export default function CertificatesPage() {
         <div className="wrap">
           <div className="mx-auto mb-8 max-w-[680px] text-center">
             <p className="mb-2 font-display text-[18px] text-accent">Awards &amp; achievements</p>
-            <h2 className="text-h2-sm">Certificates published by the clinic</h2>
-            <p className="mt-3 text-muted">Select a certificate to view it larger.</p>
+            <h2 className="text-h2-sm">Certificates and professional highlights</h2>
           </div>
           <ImageGallery items={certificatePhotos} label="Dr. Archana Mal’s certificates and achievements" />
         </div>

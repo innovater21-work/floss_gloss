@@ -43,7 +43,7 @@ export function BookingWidgetProvider({ children }: { children: ReactNode }) {
           onClose={closeBooking}
         >
           <div className="flex max-h-[94vh] flex-col">
-            <header className="flex items-start justify-between gap-5 border-b border-line px-6 py-4 max-md:px-4">
+            <header className="flex items-start justify-between gap-5 border-b border-line px-8 py-6 max-md:px-5 max-md:py-5">
               <div>
                 <p className="mb-1 text-[12px] font-extrabold uppercase tracking-[.12em] text-accent">Online booking · KiviHealth</p>
                 <h2 id="kivi-booking-title" className="font-display text-[28px] leading-tight max-md:text-[23px]">Continue to appointment booking</h2>
@@ -57,7 +57,7 @@ export function BookingWidgetProvider({ children }: { children: ReactNode }) {
                 onClick={closeBooking}
               >×</button>
             </header>
-            <div className="grid gap-5 bg-bg-alt px-6 py-7 max-md:px-4">
+            <div className="grid gap-5 bg-bg-alt px-8 py-8 max-md:px-5 max-md:py-6">
               <p className="max-w-[760px] text-[14px] text-muted">Your booking details are entered on KiviHealth. If the provider has no suitable slots, you can return here and send the clinic an email request.</p>
               <div className="flex flex-wrap items-center gap-4">
                 <ButtonLink variant="accent" href={clinic.kiviBookingUrl} target="_blank" rel="noopener noreferrer" onClick={closeBooking}>Continue to KiviHealth <span aria-hidden="true">↗</span></ButtonLink>

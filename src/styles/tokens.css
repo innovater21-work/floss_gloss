@@ -58,8 +58,8 @@
 
   /* ---------- Layout ---------- */
   --fg-container: 1200px;
-  --fg-section-y: 104px;
-  --fg-section-y-mobile: 72px;
+  --fg-section-y: 72px;
+  --fg-section-y-mobile: 48px;
 
   /* ---------- Elevation ---------- */
   --fg-shadow-sticker: 0 18px 30px -16px rgba(0, 0, 0, 0.35);

@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { Button } from "@/components/ui/button";
+import { Icon } from "@/components/ui/icon";
 import { clinic, hours, treatments } from "@/content/site";
 
 const fieldClass = "min-h-12 rounded-md border border-line bg-bg px-4 font-body text-[16px] font-normal outline-none focus:border-accent focus:ring-2 focus:ring-accent/20";
@@ -110,7 +111,7 @@ export function BookingRequestForm() {
           <p className="mt-2 text-muted">{statusMessage}</p>
           {status === "error" ? (
             <p className="mt-4 text-[13px] text-muted">
-              Contact the clinic by <a className="font-bold text-primary underline" href={`mailto:${clinic.email}`}>email</a>, <a className="font-bold text-primary underline" href={clinic.phoneHref}>calling {clinic.phone}</a>, or <a className="font-bold text-primary underline" href={clinic.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp</a>.
+              Contact the clinic by <a className="font-bold text-primary underline" href={`mailto:${clinic.email}`}>email</a>, <a className="font-bold text-primary underline" href={clinic.phoneHref}>calling {clinic.phone}</a>, or <a className="font-bold text-primary underline" href={clinic.whatsapp} target="_blank" rel="noopener noreferrer"><Icon name="wa" className="mr-1" />WhatsApp</a>.
             </p>
           ) : null}
         </div>

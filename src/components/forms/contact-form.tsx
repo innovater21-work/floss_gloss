@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { Button } from "@/components/ui/button";
+import { Icon } from "@/components/ui/icon";
 import { clinic } from "@/content/site";
 
 export function ContactForm({ subject = "Website enquiry", compact = false }: { subject?: string; compact?: boolean }) {
@@ -82,7 +83,7 @@ export function ContactForm({ subject = "Website enquiry", compact = false }: { 
           <p className="mt-2 text-[14px] text-muted">{statusMessage}</p>
           {status === "error" ? (
             <p className="mt-4 text-[13px] text-muted">
-              You can <a className="font-bold text-primary underline" href={`mailto:${clinic.email}`}>email the clinic</a>, <a className="font-bold text-primary underline" href={clinic.phoneHref}>call {clinic.phone}</a>, or <a className="font-bold text-primary underline" href={clinic.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp the clinic</a>.
+              You can <a className="font-bold text-primary underline" href={`mailto:${clinic.email}`}>email the clinic</a>, <a className="font-bold text-primary underline" href={clinic.phoneHref}>call {clinic.phone}</a>, or <a className="font-bold text-primary underline" href={clinic.whatsapp} target="_blank" rel="noopener noreferrer"><Icon name="wa" className="mr-1" />WhatsApp the clinic</a>.
             </p>
           ) : null}
         </div>

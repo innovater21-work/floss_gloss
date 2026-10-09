@@ -8,7 +8,7 @@ export function WhyChooseSection() {
     <section className="section-y bg-bg-alt">
       <div className="wrap">
         <SectionHeader eyebrow="Thoughtful care" title="The little things make a difference" intro="A careful team, clear explanations and a clinic prepared for your comfort." />
-        <div className="grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1 grid-center-last-tablet">
+        <div className="grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
           {features.map((feature, index) => (
             <article key={feature.title} className={cn("rounded-card border p-6", index % 2 === 0 ? "border-transparent bg-soft" : "border-line bg-surface")}>
               <Icon name={feature.icon} className="mb-4 size-11 rounded-full bg-primary p-2.5 text-on-primary" />

@@ -29,7 +29,7 @@ export function Hero() {
         <div className="mb-[26px] flex flex-wrap justify-center gap-2.5">
           <Pill icon="star">{clinic.rating} on Google</Pill>
           <Pill icon="users">Kids to grandparents</Pill>
-          <Pill icon="shield">Hospital-grade hygiene</Pill>
+          <Pill icon="shield">Careful hygiene</Pill>
         </div>
 
         <h1 className="mx-auto max-w-[980px] text-display">
@@ -62,7 +62,6 @@ export function Hero() {
             <Icon name="wa" />
             Ask on WhatsApp
           </ButtonLink>
-          <ButtonLink variant="outline" href="/#callback-form">Request a callback</ButtonLink>
         </div>
 
         <div className="relative mt-16 grid grid-cols-[1fr_1.25fr_1fr] items-end gap-[22px] max-md:mt-10 max-md:grid-cols-1">

@@ -15,7 +15,7 @@ export function DoctorSection() {
         </div>
         <div>
           <Eyebrow>Meet your dentist</Eyebrow>
-          <h2 className="mb-[18px] text-h2">Hi, I&apos;m Dr. Archana - let&apos;s look after your smile together.</h2>
+          <h2 className="mb-[18px] text-h2">Your smile is cared for by Dr. Archana.</h2>
           <p className="mb-3.5 text-muted">{doctor.biography[0]}</p>
           <p className="mb-3.5 text-muted">{doctor.biography[1]}</p>
           <div className="mt-6 mb-[30px] flex flex-wrap gap-2">

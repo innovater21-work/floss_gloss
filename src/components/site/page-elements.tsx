@@ -63,7 +63,7 @@ export function ClinicCTA({
         <div className="flex flex-wrap gap-3">
           <BookAppointmentButton>Book a visit</BookAppointmentButton>
           <ButtonLink variant="outline" href={clinic.phoneHref}>Call the clinic</ButtonLink>
-          <ButtonLink variant="outline" href="/#callback-form">Request a callback</ButtonLink>
+          <ButtonLink variant="outline" href="/callback">Request a callback</ButtonLink>
         </div>
       </div>
     </section>

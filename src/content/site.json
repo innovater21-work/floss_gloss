@@ -17,7 +17,7 @@
     "facebookUrl": "https://www.facebook.com/flossgloss.in",
     "instagramUrl": "https://www.instagram.com/flossgloss.in",
     "rating": "5.0",
-    "reviewCount": 83,
+    "reviewCount": 85,
     "since": 2007,
     "serviceAreas": "Shela, Bopal, South Bopal, Applewoods & Shilaj"
   },
@@ -33,9 +33,18 @@
     "aboutDoctor": {"src":"/images/clinic/dr-archana-portrait-close.webp","label":"Meet Dr. Archana","alt":"Portrait of Dr. Archana Mal"},
     "treatment": {"src":"/images/clinic/dental-treatment-01.webp","label":"Dental care in progress","alt":"A patient receiving dental care at Floss & Gloss"}
   },
+  "clinicTour": {
+    "eyebrow": "Inside the clinic",
+    "title": "Take a look around Floss & Gloss",
+    "description": "Watch the full clinic video and see the entrance, waiting area and treatment rooms before your visit.",
+    "src": "/videos/clinic-tour.mp4",
+    "poster": "/images/clinic/clinic-tour-poster.webp",
+    "alt": "A full video tour of the Floss & Gloss entrance, waiting area and treatment rooms"
+  },
   "infrastructurePhotos": [
     {"src":"/images/clinic/patient-consultation-01.webp","label":"Patient consultation","alt":"A patient discussing dental care with the dentist"},
-    {"src":"/images/clinic/clinic-building-01.webp","label":"Clinic building","alt":"The building where Floss & Gloss Dental Clinic is located"}
+    {"src":"/images/clinic/clinic-building-01.webp","label":"Clinic building","alt":"The building where Floss & Gloss Dental Clinic is located"},
+    {"src":"/images/clinic/clinic-care-team.webp","label":"Meet the clinic team","alt":"Dr. Archana and a dental team member at the clinic"}
   ],
   "galleryGroups": [
     {
@@ -90,15 +99,15 @@
     }
   ],
   "certificatePhotos": [
-    { "src": "/images/certificates/1.jpg", "alt": "Award and achievement certificate of Dr. Archana Mal 1", "label": "Award and achievement 1" },
-    { "src": "/images/certificates/2.jpg", "alt": "Award and achievement certificate of Dr. Archana Mal 2", "label": "Award and achievement 2" },
-    { "src": "/images/certificates/3.jpg", "alt": "Award and achievement certificate of Dr. Archana Mal 3", "label": "Award and achievement 3" },
-    { "src": "/images/certificates/4.jpg", "alt": "Award and achievement certificate of Dr. Archana Mal 4", "label": "Award and achievement 4" }
+    { "src": "/images/certificates/1-trimmed.jpg", "alt": "Webinar announcement naming Dr. Archana Mal as speaker for Tooth Pain: Still a Challenge on 22 November 2023", "label": "Medical Webinar Speaker - Tooth Pain: Still a Challenge" },
+    { "src": "/images/certificates/2.jpg", "alt": "Certificate of participation for presenting a free paper or poster at the 37th National Annual Conference of the Indian Society of Periodontology in Shimla, 12 to 14 October 2012", "label": "Free Paper / Poster Presentation - 37th ISP Conference" },
+    { "src": "/images/certificates/3.jpg", "alt": "Certificate of attendance at the 10th ISP PG Workshop at Sri Ramachandra University, Chennai, on 24 and 25 June 2011", "label": "10th ISP PG Workshop - Certificate of Attendance" },
+    { "src": "/images/certificates/4.jpg", "alt": "Certificate for attending the Continuing Medical Education Programme Radiology and Imaging in Dental Practice: An Update at PGIMER Chandigarh on 1 May 2011", "label": "Radiology & Imaging in Dental Practice: An Update - CME" }
   ],
   "policyPhotos": {
-    "vision": { "src": "/images/why/1.png", "alt": "Vision of Floss & Gloss Dental Clinic", "label": "Clinic vision" },
-    "mission": { "src": "/images/why/2.png", "alt": "Mission of Floss & Gloss Dental Clinic", "label": "Clinic mission" },
-    "quality": { "src": "/images/why/3.png", "alt": "Quality policy of Floss & Gloss Dental Clinic", "label": "Quality policy" }
+    "vision": { "src": "/images/clinic/family-consultation.webp", "alt": "Dr. Archana explaining dental care to a parent and child", "label": "Care for the whole family" },
+    "mission": { "src": "/images/clinic/patient-consultation-01.webp", "alt": "Dr. Archana reviewing a dental X-ray with a patient", "label": "A clear plan for patient care" },
+    "quality": { "src": "/images/clinic/dental-treatment-04.webp", "alt": "Dental professionals in masks and gloves providing care in the treatment room", "label": "Care in the treatment room" }
   },
   "homepageSlides": [
     {"title":"Thoughtful dental care","text":"Explore our calm treatment spaces and the people who will care for your family.","image":{"src":"/images/clinic/dental-treatment-04.webp","label":"A calm treatment setting","alt":"Dental care in the Floss & Gloss treatment room"}},
@@ -106,23 +115,23 @@
     {"title":"A clinic that feels welcoming","text":"Get to know our team and the clinic before planning your visit.","image":{"src":"/images/clinic/clinic-care-team.webp","label":"Our care team","alt":"Members of the Floss & Gloss care team at reception"}}
   ],
   "ages": [
-    { "icon": "kid", "title": "Little ones", "text": "Fear-free first visits that build healthy habits early.", "tags": ["Pediatric care", "Fillings", "Habit advice"] },
+    { "icon": "kid", "title": "Little ones", "text": "Gentle first visits help children build healthy habits early.", "tags": ["Paediatric care", "Fillings", "Habit advice"] },
     { "icon": "align", "title": "Teens", "text": "Straighter smiles and wisdom-tooth care, done right.", "tags": ["Braces", "Invisalign", "Wisdom teeth"] },
-    { "icon": "smile", "title": "Adults", "text": "Fix pain fast, protect your gums and love your smile.", "tags": ["Root canal", "Smile design", "Veneers"] },
-    { "icon": "denture", "title": "Seniors", "text": "Comfortable replacements that let you eat and smile freely.", "tags": ["Implants", "Dentures", "Gum care"] }
+    { "icon": "smile", "title": "Adults", "text": "Care for dental concerns, gum health and smile goals.", "tags": ["Root canal", "Smile design", "Veneers"] },
+    { "icon": "denture", "title": "Seniors", "text": "Tooth replacement options planned around comfort, fit and everyday function.", "tags": ["Implants", "Dentures", "Gum care"] }
   ],
   "promises": [
-    { "icon": "chat", "title": "Every step explained", "text": "You'll always know what's happening and why." },
-    { "icon": "clock", "title": "Never rushed", "text": "Appointment-based visits mean no waiting and no hurry." },
+    { "icon": "chat", "title": "Every step explained", "text": "We explain each step of your care and why it is recommended." },
+    { "icon": "clock", "title": "Time for your questions", "text": "Appointments are planned to give you time to discuss your care." },
     { "icon": "card", "title": "Clear pricing", "text": "Costs discussed upfront, with multiple payment options." },
-    { "icon": "family", "title": "Great with kids", "text": "Patient, playful care that calms little nerves." }
+    { "icon": "family", "title": "Great with kids", "text": "A patient, playful approach can help children feel at ease." }
   ],
   "features": [
     { "icon": "users", "title": "Experienced team", "text": "A trained team focused on careful, patient-centred dental care." },
     { "icon": "autoclave", "title": "Instrument sterilisation", "text": "Autoclave sterilisation is part of the clinic's instrument-safety process." },
     { "icon": "xray", "title": "Digital X-rays", "text": "Digital imaging supports diagnosis when an X-ray is clinically needed." },
     { "icon": "shield", "title": "Additional hygiene steps", "text": "The clinic describes UV-cabinet treatment as an additional step in its sterilising process." },
-    { "icon": "check", "title": "Hygiene focused", "text": "Hygiene protocols are followed throughout patient care." },
+    { "icon": "check", "title": "Hygiene-focused", "text": "Hygiene protocols are followed throughout patient care." },
     { "icon": "heart", "title": "A calm setting", "text": "A welcoming atmosphere helps make visits feel more comfortable." },
     { "icon": "care", "title": "Patient-friendly staff", "text": "The team aims to make each visit supportive and easy to understand." },
     { "icon": "cal", "title": "Appointment based", "text": "Appointments help the team respect your time and avoid unnecessary waiting." },
@@ -141,13 +150,13 @@
       "Dr. Archana Mal has practised dentistry since 2007 and completed her master's specialisation in Periodontics, the care of gums and supporting structures. She welcomes patients of every age and takes time to explain treatment options clearly.",
       "Her approach is patient-centred: listen first, explain each step, and make a plan together. Outside the clinic she is a busy mum who enjoys the gym and exploring new places."
     ],
-    "vision": "To build a trusted dental community where people feel confident about their smiles and take an active role in their oral health, through compassionate care and thoughtful use of modern dentistry.",
-    "mission": "To provide comprehensive dental care that prioritises patient comfort, safety and clear communication, with treatment plans tailored to each person's needs.",
-    "qualityPolicy": "The clinic aims to maintain consistent standards of clinical care, hygiene and patient communication, and to improve its service through continuing learning and patient feedback."
+    "vision": "Our vision at Floss & Gloss Dental Clinic is to be recognised as a leader in dental healthcare, known for revolutionising patient experiences through innovation, compassion, and unparalleled expertise. We strive to set new standards in oral healthcare by integrating the latest advances in dental technology while maintaining a warm and welcoming environment.\n\nBy focusing on individualised treatment plans, we aim to empower our patients with the knowledge and tools necessary for optimal oral health, thus enhancing their overall quality of life. We envision a community where all individuals feel confident in their smiles and are proactive about their dental health. Floss & Gloss Dental Clinic aspires to be at the forefront of fostering lifelong relationships with our patients, built on trust, respect, and mutual well-being.",
+    "mission": "Our mission at Floss & Gloss Dental Clinic is to provide exceptional dental care that prioritises patient comfort, safety, and satisfaction. We are committed to delivering comprehensive dental services that encompass preventive, restorative, and cosmetic dentistry, tailored to meet the unique needs of each patient.\n\nThrough the continued adoption of the latest dental technologies, our experienced team of professionals aims to offer high-quality treatments that are both effective and minimally invasive. We focus on creating a supportive and friendly environment where patients feel valued and understood, encouraging open communication and active participation in their dental health journey. Our ultimate goal is to promote long-term oral health, enabling every patient to achieve and maintain a beautiful, healthy smile for life.",
+    "qualityPolicy": "At Floss & Gloss Dental Clinic, our quality policy is centred on providing patient-focused dental care that consistently meets and exceeds expectations. We are dedicated to implementing rigorous standards of clinical excellence and hygiene, ensuring that every procedure is performed with precision and care.\n\nOur commitment to quality involves continuous professional development for our staff to stay abreast of the latest dental research and practices. We employ state-of-the-art equipment and materials, adhering to the highest safety protocols to deliver reliable and durable dental solutions. We actively seek patient feedback to refine our services and enhance patient satisfaction. Through meticulous attention to detail, empathetic care, and unwavering professionalism, we aim to build lasting trust and achieve optimal dental health outcomes for all our patients. Our quality policy is not just about meeting standards but about fostering a culture of continuous improvement and excellence in every aspect of our practice."
   },
   "hours": [
-    { "day": "Monday – Saturday", "time": "10am–2pm & 5pm–8pm" },
-    { "day": "Sunday", "time": "By appointment, 10am–2pm" }
+    { "day": "Monday – Saturday", "time": "10 AM–2 PM & 5 PM–8 PM" },
+    { "day": "Sunday", "time": "By appointment, 10 AM–2 PM" }
   ],
   "seoCopy": [
     "Floss & Gloss Dental Clinic welcomes families from Shela, Bopal, South Bopal, Applewoods and Shilaj. The clinic offers preventive, restorative, cosmetic, gum, surgical and paediatric dental care under one roof.",

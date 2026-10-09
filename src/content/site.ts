@@ -140,6 +140,16 @@ export const photos = {
   treatment: parsePhoto(photosJson.treatment, "site.photos.treatment"),
 };
 
+const clinicTourJson = object(root.clinicTour, "site.clinicTour");
+export const clinicTour = {
+  eyebrow: string(clinicTourJson.eyebrow, "site.clinicTour.eyebrow"),
+  title: string(clinicTourJson.title, "site.clinicTour.title"),
+  description: string(clinicTourJson.description, "site.clinicTour.description"),
+  src: string(clinicTourJson.src, "site.clinicTour.src"),
+  poster: string(clinicTourJson.poster, "site.clinicTour.poster"),
+  alt: string(clinicTourJson.alt, "site.clinicTour.alt"),
+};
+
 function parsePhotoArray(value: unknown, path: string): PhotoAsset[] {
   return array(value, path).map((item, index) => parsePhoto(item, `${path}[${index}]`));
 }

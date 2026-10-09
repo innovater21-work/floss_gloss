@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ImageGallery } from "@/components/ui/image-gallery";
 import { Breadcrumbs, ClinicCTA, PageIntro } from "@/components/site/page-elements";
+import { ClinicTourSection } from "@/components/site/clinic-tour";
 import { galleryGroups } from "@/content/site";
 
 export const metadata: Metadata = {
@@ -13,7 +14,8 @@ export default function GalleryPage() {
   return (
     <main>
       <Breadcrumbs items={[{ label: "About", href: "/about" }, { label: "Gallery" }]} />
-      <PageIntro eyebrow="Our clinic in pictures" title="A welcoming place for your family’s dental care." description="Browse a few highlights, then open a collection to see every photo full size." />
+      <PageIntro eyebrow="Our clinic in pictures" title="A welcoming place for your family’s dental care." description="Watch the full clinic video, then open a collection to explore the photos." />
+      <ClinicTourSection />
       <section className="section-y pt-0!">
         <div className="wrap"><ImageGallery groups={galleryGroups} label="Floss & Gloss photo collections" /></div>
       </section>
