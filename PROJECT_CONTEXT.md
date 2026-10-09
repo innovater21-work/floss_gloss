@@ -1,6 +1,6 @@
 # Floss & Gloss — Project Context
 
-Reviewed: 2026-10-02
+Reviewed: 2026-10-03
 
 This is the working reference for future changes in this project. Keep visual and component changes aligned with `DESIGN_SYSTEM.md`; treat the JSON files in `src/content/` as the content source of truth.
 
