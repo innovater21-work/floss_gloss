@@ -1,10 +1,14 @@
 import { cn } from "@/lib/cn";
 
 /** All icon names available in the sprite. 24×24 grid, 1.8 stroke, round caps. */
-export const iconNames = ["tooth", "spark", "crown", "smile", "align", "fill", "veneer", "pull", "gum", "implant", "denture", "wisdom", "root", "kid", "shield", "xray", "uv", "clock", "cal", "pin", "phone", "wa", "mail", "car", "card", "users", "heart", "grad", "badge", "check", "arrow", "arrow-l", "plus", "chat", "quote", "star"] as const;
+export const iconNames = ["tooth", "tooth-spark", "spark", "crown", "smile", "align", "fill", "veneer", "pull", "gum", "implant", "denture", "wisdom", "root", "kid", "family", "care", "autoclave", "shield", "xray", "uv", "clock", "cal", "pin", "phone", "wa", "mail", "car", "card", "users", "heart", "grad", "badge", "check", "arrow", "arrow-l", "plus", "chat", "quote", "star"] as const;
 export type IconName = (typeof iconNames)[number];
 
-const SPRITE = `<symbol id="i-tooth" viewBox="0 0 24 24"><path d="M7 3C4.6 3 3 5 3 7.4c0 2 .8 3.4 1.3 5.4.5 2 .7 5 1.7 7 .6 1.2 1.8 1.2 2.3 0 .6-1.6.8-4.1 2.7-4.1s2.1 2.5 2.7 4.1c.5 1.2 1.7 1.2 2.3 0 1-2 1.2-5 1.7-7 .5-2 1.3-3.4 1.3-5.4C21 5 19.4 3 17 3c-2 0-3 1-5 1S9 3 7 3z"/></symbol>
+const SPRITE = `<symbol id="i-tooth-spark" viewBox="0 0 24 24"><path d="M7 6C4.6 6 3 8 3 10.4c0 2 .8 3.4 1.3 5.4.5 2 .7 5 1.7 7 .6 1.2 1.8 1.2 2.3 0 .6-1.6.8-4.1 2.7-4.1s2.1 2.5 2.7 4.1c.5 1.2 1.7 1.2 2.3 0 1-2 1.2-5 1.7-7 .5-2 1.3-3.4 1.3-5.4C21 8 19.4 6 17 6c-2 0-3 1-5 1S9 6 7 6z"/><path d="M18 2v3m-1.5-1.5h3M22 8v2m-1-1h2"/></symbol>
+<symbol id="i-family" viewBox="0 0 24 24"><circle cx="12" cy="6.5" r="2.5"/><circle cx="5.5" cy="9" r="2"/><circle cx="18.5" cy="9" r="2"/><path d="M8 20v-1.5c0-2.8 1.5-4.7 4-4.7s4 1.9 4 4.7V20M1.8 19v-1.2c0-2.4 1.4-4 3.7-4 1.1 0 2 .3 2.7 1M22.2 19v-1.2c0-2.4-1.4-4-3.7-4-1.1 0-2 .3-2.7 1"/></symbol>
+<symbol id="i-care" viewBox="0 0 24 24"><circle cx="8.5" cy="7" r="3"/><path d="M2.5 21c.4-4 2.5-6.5 6-6.5 2 0 3.5.7 4.6 2M17.5 13.5c-1.5-1.4-3.7-.3-3.7 1.4 0 1.2 1.9 2.3 3.7 3.7 1.8-1.4 3.7-2.5 3.7-3.7 0-1.7-2.2-2.8-3.7-1.4z"/></symbol>
+<symbol id="i-autoclave" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="17" rx="2"/><path d="M8 5V3h8v2M8 8h2m4 0h2"/><circle cx="12" cy="15" r="4.5"/><path d="M12 12.5v2.8l1.8 1"/></symbol>
+<symbol id="i-tooth" viewBox="0 0 24 24"><path d="M7 3C4.6 3 3 5 3 7.4c0 2 .8 3.4 1.3 5.4.5 2 .7 5 1.7 7 .6 1.2 1.8 1.2 2.3 0 .6-1.6.8-4.1 2.7-4.1s2.1 2.5 2.7 4.1c.5 1.2 1.7 1.2 2.3 0 1-2 1.2-5 1.7-7 .5-2 1.3-3.4 1.3-5.4C21 5 19.4 3 17 3c-2 0-3 1-5 1S9 3 7 3z"/></symbol>
 <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
 <symbol id="i-crown" viewBox="0 0 24 24"><path d="M3 8l4 4 5-7 5 7 4-4-2 11H5z"/><path d="M5 19h14"/></symbol>
 <symbol id="i-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 14c1 1.5 2.4 2.3 4 2.3s3-.8 4-2.3"/><path d="M9 9.5h.01M15 9.5h.01"/></symbol>
@@ -25,7 +29,7 @@ const SPRITE = `<symbol id="i-tooth" viewBox="0 0 24 24"><path d="M7 3C4.6 3 3 5
 <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
 <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0112 2.5a7 7 0 017 7C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
 <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h3.5l1.8 4.5-2.3 1.4a11 11 0 006.1 6.1l1.4-2.3L20 14.5V18a2 2 0 01-2 2A15 15 0 013 5a2 2 0 012-2z"/></symbol>
-<symbol id="i-wa" viewBox="0 0 24 24"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1112 20.5a8.4 8.4 0 01-4.1-1z"/><path d="M9 8.5c0 3 2.5 6.5 6.5 6.5l1-1.5-2-1-1 .8a4.5 4.5 0 01-2.3-2.3l.8-1-1-2z"/></symbol>
+<symbol id="i-wa" viewBox="0 0 24 24"><path fill="#25D366" stroke="none" d="M12 2a10 10 0 00-8.54 15.2L2 22l5.04-1.32A10 10 0 1012 2z"/><path fill="#fff" stroke="none" d="M17.03 14.53c-.27-.13-1.61-.79-1.86-.88-.25-.09-.43-.13-.61.13-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.13-1.14-.42-2.17-1.34-.8-.71-1.35-1.58-1.51-1.85-.16-.27-.02-.42.12-.55.12-.12.27-.32.4-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.47-.07-.13-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47H8.2c-.18 0-.47.07-.72.34-.25.27-.94.92-.94 2.24s.96 2.6 1.1 2.78c.13.18 1.88 2.87 4.55 4.02.64.28 1.14.44 1.53.56.64.2 1.22.17 1.68.1.51-.08 1.61-.66 1.84-1.3.23-.64.23-1.19.16-1.3-.07-.12-.25-.2-.52-.34z"/></symbol>
 <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
 <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 16V11l2-5h10l2 5v5M3 16h18v3H3z"/><circle cx="7.5" cy="13.5" r=".5"/><circle cx="16.5" cy="13.5" r=".5"/></symbol>
 <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h3"/></symbol>

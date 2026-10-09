@@ -1,0 +1,201 @@
+{
+  "clinic": {
+    "name": "Floss & Gloss",
+    "tagline": "Family Dental Clinic",
+    "area": "Shela",
+    "phone": "+91 91045 91919",
+    "phoneHref": "tel:+919104591919",
+    "whatsapp": "https://api.whatsapp.com/send?phone=919104591919",
+    "email": "drarchanamal@gmail.com",
+    "address": "130, First Floor, Orchid Sky, Shela, Ahmedabad 380058",
+    "mapEmbed": "https://maps.google.com/maps?q=Floss%20%26%20Gloss%20Dental%20Clinic%2C%20Orchid%20Sky%2C%20Shela%2C%20Ahmedabad&z=15&output=embed",
+    "directions": "https://www.google.com/maps/search/?api=1&query=Floss%20%26%20Gloss%20Dental%20Clinic%2C%20Orchid%20Sky%2C%20Shela%2C%20Ahmedabad",
+    "bookingUrl": "/book-visit",
+    "kiviBookingUrl": "https://kivihealth.com/iam/archana.mal.m8w8m9l53l8p/bookslot",
+    "googleSearchUrl": "https://www.google.com/maps/search/?api=1&query=Floss%20%26%20Gloss%20Dental%20Clinic%2C%20Shela%2C%20Ahmedabad",
+    "googleReviewUrl": "https://search.google.com/local/writereview?placeid=ChIJ1TmYosibXjkRdxJewVGDEMM",
+    "facebookUrl": "https://www.facebook.com/flossgloss.in",
+    "instagramUrl": "https://www.instagram.com/flossgloss.in",
+    "rating": "5.0",
+    "reviewCount": 85,
+    "since": 2007,
+    "serviceAreas": "Shela, Bopal, South Bopal, Applewoods & Shilaj"
+  },
+  "logo": {
+    "src": "/images/logo.png",
+    "width": 269,
+    "height": 81
+  },
+  "photos": {
+    "clinic": {"src":"/images/clinic/clinic-entrance-edited.webp","label":"Clinic entrance","alt":"Entrance to Floss & Gloss Dental Clinic"},
+    "doctor": {"src":"/images/clinic/dr-archana-portrait.webp","label":"Dr. Archana Mal","alt":"Portrait of Dr. Archana Mal at the clinic","objectPosition":"50% 24%"},
+    "doctorFeature": {"src":"/images/clinic/dr-archana-at-desk.webp","label":"Dr. Archana at the clinic","alt":"Dr. Archana Mal at her desk"},
+    "aboutDoctor": {"src":"/images/clinic/dr-archana-portrait-close.webp","label":"Meet Dr. Archana","alt":"Portrait of Dr. Archana Mal"},
+    "treatment": {"src":"/images/clinic/dental-treatment-01.webp","label":"Dental care in progress","alt":"A patient receiving dental care at Floss & Gloss"}
+  },
+  "clinicTour": {
+    "eyebrow": "Inside the clinic",
+    "title": "Take a look around Floss & Gloss",
+    "description": "Watch the full clinic video and see the entrance, waiting area and treatment rooms before your visit.",
+    "src": "/videos/clinic-tour.mp4",
+    "poster": "/images/clinic/clinic-tour-poster.webp",
+    "alt": "A full video tour of the Floss & Gloss entrance, waiting area and treatment rooms"
+  },
+  "infrastructurePhotos": [
+    {"src":"/images/clinic/patient-consultation-01.webp","label":"Patient consultation","alt":"A patient discussing dental care with the dentist"},
+    {"src":"/images/clinic/clinic-building-01.webp","label":"Clinic building","alt":"The building where Floss & Gloss Dental Clinic is located"},
+    {"src":"/images/clinic/clinic-care-team.webp","label":"Meet the clinic team","alt":"Dr. Archana and a dental team member at the clinic"}
+  ],
+  "galleryGroups": [
+    {
+      "title": "Clinic exteriors",
+      "description": "Street and entrance views of Floss & Gloss.",
+      "photos": [
+        {"src":"/images/clinic/clinic-building-02.webp","label":"Floss & Gloss outside","alt":"Exterior view of the Floss & Gloss clinic building"},
+        {"src":"/images/clinic/clinic-building-03.webp","label":"Clinic exterior","alt":"Street view of the clinic building"},
+        {"src":"/images/clinic/clinic-building-04.webp","label":"Find the clinic","alt":"Street-facing exterior of the clinic building"},
+        {"src":"/images/clinic/clinic-building-05.webp","label":"The clinic on Orchid Sky Road","alt":"Exterior of the building on Orchid Sky Road"}
+      ]
+    },
+    {
+      "title": "Meet Dr. Archana",
+      "description": "Portraits and moments from the clinic.",
+      "photos": [
+        {"src":"/images/clinic/dr-archana-at-desk-wide.webp","label":"Dr. Archana at work","alt":"Dr. Archana Mal in her clinic office"},
+        {"src":"/images/clinic/dr-archana-portrait-seated.webp","label":"Dr. Archana in her office","alt":"Dr. Archana Mal seated at her clinic desk"}
+      ]
+    },
+    {
+      "title": "Care in progress",
+      "description": "A closer look at treatment-room care.",
+      "photos": [
+        {"src":"/images/clinic/dental-treatment-02.webp","label":"Treatment room","alt":"Dental treatment taking place in the clinic treatment room"},
+        {"src":"/images/clinic/dental-treatment-03.webp","label":"Care in the treatment room","alt":"A dental professional caring for a patient"},
+        {"src":"/images/clinic/dental-treatment-05.webp","label":"Patient care","alt":"A dental professional treating a patient"}
+      ]
+    },
+    {
+      "title": "Patient consultations",
+      "description": "Conversations about care and next steps.",
+      "photos": [
+        {"src":"/images/clinic/patient-consultation-02.webp","label":"A closer conversation","alt":"A patient consultation with Dr. Archana Mal"},
+        {"src":"/images/clinic/patient-consultation-03.webp","label":"Planning a visit","alt":"A patient reviewing dental information with the dentist"}
+      ]
+    },
+    {
+      "title": "Our clinic team",
+      "description": "Meet the people who help care for patients.",
+      "photos": [
+        {"src":"/images/clinic/front-desk-team.webp","label":"Clinic team","alt":"The clinic team at the front desk"}
+      ]
+    },
+    {
+      "title": "Reception & waiting",
+      "description": "A glimpse of the clinic’s welcome and waiting spaces.",
+      "photos": [
+        {"src":"/images/clinic/clinic-reception.webp","label":"Clinic reception","alt":"Reception area at Floss & Gloss Dental Clinic"},
+        {"src":"/images/clinic/clinic-waiting-area.webp","label":"Waiting area","alt":"A patient seated in the clinic waiting area"}
+      ]
+    }
+  ],
+  "certificatePhotos": [
+    { "src": "/images/certificates/1-trimmed.jpg", "alt": "Webinar announcement naming Dr. Archana Mal as speaker for Tooth Pain: Still a Challenge on 22 November 2023", "label": "Medical Webinar Speaker - Tooth Pain: Still a Challenge" },
+    { "src": "/images/certificates/2.jpg", "alt": "Certificate of participation for presenting a free paper or poster at the 37th National Annual Conference of the Indian Society of Periodontology in Shimla, 12 to 14 October 2012", "label": "Free Paper / Poster Presentation - 37th ISP Conference" },
+    { "src": "/images/certificates/3.jpg", "alt": "Certificate of attendance at the 10th ISP PG Workshop at Sri Ramachandra University, Chennai, on 24 and 25 June 2011", "label": "10th ISP PG Workshop - Certificate of Attendance" },
+    { "src": "/images/certificates/4.jpg", "alt": "Certificate for attending the Continuing Medical Education Programme Radiology and Imaging in Dental Practice: An Update at PGIMER Chandigarh on 1 May 2011", "label": "Radiology & Imaging in Dental Practice: An Update - CME" }
+  ],
+  "policyPhotos": {
+    "vision": { "src": "/images/clinic/family-consultation.webp", "alt": "Dr. Archana explaining dental care to a parent and child", "label": "Care for the whole family" },
+    "mission": { "src": "/images/clinic/patient-consultation-01.webp", "alt": "Dr. Archana reviewing a dental X-ray with a patient", "label": "A clear plan for patient care" },
+    "quality": { "src": "/images/clinic/dental-treatment-04.webp", "alt": "Dental professionals in masks and gloves providing care in the treatment room", "label": "Care in the treatment room" }
+  },
+  "homepageSlides": [
+    {"title":"Thoughtful dental care","text":"Explore our calm treatment spaces and the people who will care for your family.","image":{"src":"/images/clinic/dental-treatment-04.webp","label":"A calm treatment setting","alt":"Dental care in the Floss & Gloss treatment room"}},
+    {"title":"Care for the whole family","text":"Clear conversations help every patient feel more at ease before treatment.","image":{"src":"/images/clinic/family-consultation.webp","label":"Family consultation","alt":"A family speaking with Dr. Archana during a clinic consultation"}},
+    {"title":"A clinic that feels welcoming","text":"Get to know our team and the clinic before planning your visit.","image":{"src":"/images/clinic/clinic-care-team.webp","label":"Our care team","alt":"Members of the Floss & Gloss care team at reception"}}
+  ],
+  "ages": [
+    { "icon": "kid", "title": "Little ones", "text": "Gentle first visits help children build healthy habits early.", "tags": ["Paediatric care", "Fillings", "Habit advice"] },
+    { "icon": "align", "title": "Teens", "text": "Straighter smiles and wisdom-tooth care, done right.", "tags": ["Braces", "Invisalign", "Wisdom teeth"] },
+    { "icon": "smile", "title": "Adults", "text": "Care for dental concerns, gum health and smile goals.", "tags": ["Root canal", "Smile design", "Veneers"] },
+    { "icon": "denture", "title": "Seniors", "text": "Tooth replacement options planned around comfort, fit and everyday function.", "tags": ["Implants", "Dentures", "Gum care"] }
+  ],
+  "promises": [
+    { "icon": "chat", "title": "Every step explained", "text": "We explain each step of your care and why it is recommended." },
+    { "icon": "clock", "title": "Time for your questions", "text": "Appointments are planned to give you time to discuss your care." },
+    { "icon": "card", "title": "Clear pricing", "text": "Costs discussed upfront, with multiple payment options." },
+    { "icon": "family", "title": "Great with kids", "text": "A patient, playful approach can help children feel at ease." }
+  ],
+  "features": [
+    { "icon": "users", "title": "Experienced team", "text": "A trained team focused on careful, patient-centred dental care." },
+    { "icon": "autoclave", "title": "Instrument sterilisation", "text": "Autoclave sterilisation is part of the clinic's instrument-safety process." },
+    { "icon": "xray", "title": "Digital X-rays", "text": "Digital imaging supports diagnosis when an X-ray is clinically needed." },
+    { "icon": "shield", "title": "Additional hygiene steps", "text": "The clinic describes UV-cabinet treatment as an additional step in its sterilising process." },
+    { "icon": "check", "title": "Hygiene-focused", "text": "Hygiene protocols are followed throughout patient care." },
+    { "icon": "heart", "title": "A calm setting", "text": "A welcoming atmosphere helps make visits feel more comfortable." },
+    { "icon": "care", "title": "Patient-friendly staff", "text": "The team aims to make each visit supportive and easy to understand." },
+    { "icon": "cal", "title": "Appointment based", "text": "Appointments help the team respect your time and avoid unnecessary waiting." },
+    { "icon": "car", "title": "On-site parking", "text": "Parking is available at the clinic for visiting families." }
+  ],
+  "doctor": {
+    "name": "Dr. Archana Mal",
+    "title": "BDS, MDS Periodontics",
+    "registration": "A-10804",
+    "since": 2007,
+    "education": [
+      { "degree": "MDS in Periodontics", "institution": "Luxmi Bai Institute of Dental Sciences, Patiala, Punjab" },
+      { "degree": "BDS", "institution": "Christian Dental College, Ludhiana, Punjab" }
+    ],
+    "biography": [
+      "Dr. Archana Mal has practised dentistry since 2007 and completed her master's specialisation in Periodontics, the care of gums and supporting structures. She welcomes patients of every age and takes time to explain treatment options clearly.",
+      "Her approach is patient-centred: listen first, explain each step, and make a plan together. Outside the clinic she is a busy mum who enjoys the gym and exploring new places."
+    ],
+    "vision": "Our vision at Floss & Gloss Dental Clinic is to be recognised as a leader in dental healthcare, known for revolutionising patient experiences through innovation, compassion, and unparalleled expertise. We strive to set new standards in oral healthcare by integrating the latest advances in dental technology while maintaining a warm and welcoming environment.\n\nBy focusing on individualised treatment plans, we aim to empower our patients with the knowledge and tools necessary for optimal oral health, thus enhancing their overall quality of life. We envision a community where all individuals feel confident in their smiles and are proactive about their dental health. Floss & Gloss Dental Clinic aspires to be at the forefront of fostering lifelong relationships with our patients, built on trust, respect, and mutual well-being.",
+    "mission": "Our mission at Floss & Gloss Dental Clinic is to provide exceptional dental care that prioritises patient comfort, safety, and satisfaction. We are committed to delivering comprehensive dental services that encompass preventive, restorative, and cosmetic dentistry, tailored to meet the unique needs of each patient.\n\nThrough the continued adoption of the latest dental technologies, our experienced team of professionals aims to offer high-quality treatments that are both effective and minimally invasive. We focus on creating a supportive and friendly environment where patients feel valued and understood, encouraging open communication and active participation in their dental health journey. Our ultimate goal is to promote long-term oral health, enabling every patient to achieve and maintain a beautiful, healthy smile for life.",
+    "qualityPolicy": "At Floss & Gloss Dental Clinic, our quality policy is centred on providing patient-focused dental care that consistently meets and exceeds expectations. We are dedicated to implementing rigorous standards of clinical excellence and hygiene, ensuring that every procedure is performed with precision and care.\n\nOur commitment to quality involves continuous professional development for our staff to stay abreast of the latest dental research and practices. We employ state-of-the-art equipment and materials, adhering to the highest safety protocols to deliver reliable and durable dental solutions. We actively seek patient feedback to refine our services and enhance patient satisfaction. Through meticulous attention to detail, empathetic care, and unwavering professionalism, we aim to build lasting trust and achieve optimal dental health outcomes for all our patients. Our quality policy is not just about meeting standards but about fostering a culture of continuous improvement and excellence in every aspect of our practice."
+  },
+  "hours": [
+    { "day": "Monday – Saturday", "time": "10 AM–2 PM & 5 PM–8 PM" },
+    { "day": "Sunday", "time": "By appointment, 10 AM–2 PM" }
+  ],
+  "seoCopy": [
+    "Floss & Gloss Dental Clinic welcomes families from Shela, Bopal, South Bopal, Applewoods and Shilaj. The clinic offers preventive, restorative, cosmetic, gum, surgical and paediatric dental care under one roof.",
+    "Dr. Archana Mal has practised dentistry since 2007 and holds an MDS in Periodontics. Appointments are planned around clear explanations, careful hygiene and the needs of each patient.",
+    "From routine cleaning and fillings to tooth replacement and smile treatments, the first step is a conversation and examination. The dentist will explain suitable options and discuss costs before treatment begins."
+  ],
+  "reviews": [
+    { "name": "Divya", "text": "You are an amazing dentist who works with great care and dedication. Thank you for making every treatment comfortable and giving such wonderful care!" },
+    { "name": "Sunayna Thakur", "text": "Exceptional service and great hospitality provided by Dr. Archana. The procedures were carried out very professionally." },
+    { "name": "Aum Desai", "text": "Had a very good experience with Dr. Archana for my wisdom tooth extraction. She explained everything clearly and made me feel comfortable throughout. The procedure went smoothly and the staff was friendly and supportive. Would definitely recommend this clinic." },
+    { "name": "Rahul Mishra", "text": "Had a root canal and an extraction in a month. The dentist was patient, explained everything and made sure I was okay the whole time. No scary surprises, no rush. Pricing was clear too." },
+    { "name": "Komal Agrawal", "text": "Good experience, and the doctor explained my issues in detail." },
+    { "name": "Neha Akolkar", "text": "Very friendly and cooperative at every stage, and they provide practical solutions for dental concerns." },
+    { "name": "Avi Rajput", "text": "A very patient doctor who clears every doubt with clarity. Highly recommended!" },
+    { "name": "Mohit Savaliya", "text": "Good experience." }
+  ],
+  "faqs": [
+    { "q": "What types of dental services do you offer?", "a": "The clinic offers preventive, cosmetic, orthodontic, restorative, gum and oral-surgery services, as well as care for children. The dentist can help you choose the right next step after an examination.", "featured": false },
+    { "q": "What should I expect during my first visit?", "a": "The dentist reviews your medical history, examines your teeth and gums, may recommend X-rays when needed, and explains any suggested treatment plan before it begins.", "featured": true },
+    { "q": "How often should I visit the dentist?", "a": "Many people book regular check-ups about every six months. Your dentist may suggest a different schedule based on your oral health and individual needs.", "featured": true },
+    { "q": "Do you offer easy payment options?", "a": "The clinic discusses costs before treatment and offers multiple payment options. Please ask the team about the options currently available.", "featured": false },
+    { "q": "What are dental implants?", "a": "An implant is a titanium post placed in the jaw to support a replacement tooth. An examination is needed to decide whether implants are suitable for you.", "featured": true },
+    { "q": "How can I improve my oral hygiene at home?", "a": "Brush twice a day with fluoride toothpaste, clean between your teeth daily, and ask your dentist for advice tailored to your mouth and health needs.", "featured": false },
+    { "q": "Do you treat children?", "a": "Yes. The clinic provides paediatric dental care and aims to make visits comfortable and positive for children and their families.", "featured": true },
+    { "q": "What is teeth whitening, and is it safe?", "a": "Whitening is a cosmetic treatment intended to lighten tooth colour. A dentist can check your teeth and gums and explain suitable options and risks before treatment.", "featured": false },
+    { "q": "How can I prevent cavities?", "a": "Regular brushing with fluoride toothpaste, cleaning between teeth, limiting frequent sugary snacks and drinks, and routine dental visits can help reduce cavity risk.", "featured": false },
+    { "q": "What are the signs of gum disease?", "a": "Red, swollen or bleeding gums, persistent bad breath, gum recession, loose teeth or pain while chewing can be signs that need a dental examination.", "featured": false },
+    { "q": "What options are there for replacing missing teeth?", "a": "Depending on your mouth and needs, options may include implants, bridges or dentures. The dentist can explain the trade-offs after examining you.", "featured": false },
+    { "q": "Can you help with dental anxiety?", "a": "The team aims to provide calm, patient-centred care, explain each step and give you time to ask questions. Tell us what would help you feel more comfortable.", "featured": true },
+    { "q": "How do I know if I need a root canal?", "a": "Persistent tooth pain, sensitivity that lingers, swelling or a darkening tooth can have several causes. A dental examination and any needed X-rays help determine the cause and treatment.", "featured": true },
+    { "q": "What are veneers?", "a": "Veneers are thin shells bonded to the front of teeth to change their appearance. A dentist can explain whether they are appropriate and what alternatives may suit you.", "featured": false },
+    { "q": "How can I keep teeth white after whitening?", "a": "Follow the dentist's care instructions, maintain daily oral hygiene and discuss any staining or sensitivity. Your dentist can advise on safe maintenance for your teeth.", "featured": false },
+    { "q": "What causes bad breath?", "a": "Bad breath can have different causes, including oral hygiene issues, gum problems or dry mouth. If it persists, a dental check-up can help identify what is going on.", "featured": false },
+    { "q": "Do I need to have my wisdom teeth removed?", "a": "Not everyone needs wisdom teeth removed. Pain, infection, decay or impaction may require assessment; a dentist can examine the area and discuss options.", "featured": false },
+    { "q": "What is fluoride treatment?", "a": "Fluoride can help strengthen tooth enamel and reduce cavity risk. Ask your dentist whether an in-clinic fluoride treatment is appropriate for you or your child.", "featured": false },
+    { "q": "Can adults get braces?", "a": "Orthodontic treatment can be considered at different ages. A consultation can assess your bite and explain options such as braces or clear aligners.", "featured": false },
+    { "q": "What are clear aligners?", "a": "Clear aligners are removable trays designed to move teeth gradually. Suitability depends on your bite and treatment goals, which are assessed by an orthodontic provider.", "featured": false },
+    { "q": "Are dental X-rays safe?", "a": "The dentist recommends X-rays only when they are useful for diagnosis or planning and will explain why they are needed and what precautions are used.", "featured": false },
+    { "q": "What are dental sealants, and who might need them?", "a": "Sealants are protective coatings placed on the chewing surfaces of some teeth to help reduce cavity risk. A dentist can advise whether they are suitable, especially for children.", "featured": false },
+    { "q": "How can I schedule an appointment?", "a": "Call the clinic, message us on WhatsApp, or use the online booking link. Sunday visits are by appointment.", "featured": false }
+  ]
+}

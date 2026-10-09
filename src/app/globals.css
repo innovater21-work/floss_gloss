@@ -2,7 +2,7 @@
 @import "../styles/tokens.css";
 
 /* =========================================================
-   Tailwind theme — maps design tokens to utilities
+   Tailwind theme - maps design tokens to utilities
    ========================================================= */
 @theme inline {
   --color-*: initial;
@@ -97,6 +97,29 @@
   }
   details > summary::-webkit-details-marker {
     display: none;
+  }
+}
+
+/* FAQ disclosure animation - native details keeps the keyboard and screen-reader behavior. */
+.faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 280ms cubic-bezier(0.2, 0.7, 0.2, 1),
+    opacity 180ms ease;
+}
+.faq-answer__inner {
+  min-height: 0;
+  overflow: hidden;
+}
+details[open] > .faq-answer {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .faq-answer {
+    transition: none;
   }
 }
 

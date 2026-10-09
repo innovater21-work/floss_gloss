@@ -29,7 +29,7 @@ export function buttonClasses({
 
 type ButtonLinkProps = ComponentPropsWithoutRef<"a"> & { variant?: ButtonVariant; size?: ButtonSize };
 
-/** Pill button rendered as a link — the only button shape in the system. */
+/** Pill button rendered as a link - the only button shape in the system. */
 export function ButtonLink({ variant, size, className, ...props }: ButtonLinkProps) {
   return <a className={buttonClasses({ variant, size, className })} {...props} />;
 }

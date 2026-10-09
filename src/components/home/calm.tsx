@@ -9,10 +9,10 @@ export function CalmSection() {
       <div className="wrap relative grid grid-cols-[1fr_1.1fr] items-center gap-16 max-lg:grid-cols-1">
         <div>
           <Eyebrow tone="dark">Nervous about the dentist?</Eyebrow>
-          <h2 className="text-h2-lg">You&apos;re in very good company — and very gentle hands.</h2>
+          <h2 className="text-h2-lg">You&apos;re in very good company - and very gentle hands.</h2>
           <div className="tint-dark-8 mt-7 rounded-sm px-6 py-[22px] font-display text-[20px] leading-[1.4]">
             “No scary surprises, no rush. Pricing was clear too.”
-            <small className="mt-2.5 block font-body text-[14px] text-dim">— Rahul Mishra, Google review</small>
+            <small className="mt-2.5 block font-body text-[14px] text-dim">- Rahul Mishra, Google review</small>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1">

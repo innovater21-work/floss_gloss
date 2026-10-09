@@ -1,4 +1,5 @@
 import { ButtonLink } from "@/components/ui/button";
+import { BookAppointmentButton } from "@/components/forms/kivi-booking-widget";
 import { Icon } from "@/components/ui/icon";
 import { Photo } from "@/components/ui/photo";
 import { Pill } from "@/components/ui/pill";
@@ -28,7 +29,7 @@ export function Hero() {
         <div className="mb-[26px] flex flex-wrap justify-center gap-2.5">
           <Pill icon="star">{clinic.rating} on Google</Pill>
           <Pill icon="users">Kids to grandparents</Pill>
-          <Pill icon="shield">Hospital-grade hygiene</Pill>
+          <Pill icon="shield">Careful hygiene</Pill>
         </div>
 
         <h1 className="mx-auto max-w-[980px] text-display">
@@ -48,15 +49,15 @@ export function Hero() {
         </h1>
 
         <p className="mx-auto mt-6 mb-[34px] max-w-[620px] text-[19px] text-muted">
-          Gentle, unhurried dentistry for every age — with a doctor who explains everything, and a clinic your kids
+          Gentle, unhurried dentistry for every age - with a doctor who explains everything, and a clinic your kids
           won&apos;t dread visiting.
         </p>
 
         <div className="flex flex-wrap justify-center gap-3">
-          <ButtonLink href="#visit">
+          <BookAppointmentButton>
             <Icon name="cal" />
             Book your family&apos;s visit
-          </ButtonLink>
+          </BookAppointmentButton>
           <ButtonLink variant="outline" href={clinic.whatsapp}>
             <Icon name="wa" />
             Ask on WhatsApp
@@ -88,3 +89,4 @@ export function Hero() {
     </section>
   );
 }
+
